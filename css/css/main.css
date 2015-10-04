@@ -1,0 +1,266 @@
+body {
+  font-family: 'Ubuntu', 'Roboto', sans-serif;
+  font-size: 15px; }
+
+.hero-image {
+  background-color: #102955;
+  background-image: url("../img/hero-bg-woman-hayek2.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#header.home-header {
+  background: transparent;
+  box-shadow: none;
+  position: inherit;
+  margin-top: -65px; }
+
+.navbar-brand {
+  background: url("../img/enok_madrid_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 160px;
+  height: 70px;
+  text-indent: -9999px; }
+
+.home-nav {
+  background: transparent;
+  border: none; }
+  .home-nav .nav li {
+    margin-top: 15px;
+    margin-left: 5px; }
+    .home-nav .nav li a {
+      color: white !important;
+      font-size: 15px;
+      font-weight: 500; }
+    .home-nav .nav li button {
+      top: 10px;
+      margin-left: 10px; }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background: transparent; }
+
+.nav li a {
+  color: #4285F4;
+  margin-right: 10px; }
+
+.navbar-collapse {
+  padding: 0; }
+
+.subnav .nav li .btn {
+  margin-left: 15px;
+  margin-top: 10px;
+  padding: 6px 12px;
+  color: white; }
+  .subnav .nav li .btn:hover, .subnav .nav li .btn:active, .subnav .nav li .btn:focus {
+    color: white; }
+.subnav .navbar-nav .active a, .subnav .navbar-nav .active a:hover {
+  border-bottom: 2px solid #FFA200;
+  background-color: transparent;
+  color: black; }
+
+.user-name a {
+  top: -10px;
+  color: white; }
+.user-name:not(#toggle-width):hover::before, .user-name:not(#toggle-width).open::before {
+  background: transparent !important; }
+
+.block-header .actions {
+  right: 0;
+  top: 10px; }
+  .block-header .actions button {
+    background: transparent;
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+    height: 30px; }
+  .block-header .actions input {
+    font-family: "fontawesome";
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-top: -1px; }
+  .block-header .actions .fg-line {
+    top: -2px; }
+
+.btn .btn-float-far-right {
+  right: -25px; }
+.btn .btn-float-far-left {
+  left: -25px; }
+.btn .btn-float-left, .btn .btn-float-right {
+  bottom: -23px;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  line-height: 38px; }
+  .btn .btn-float-left i, .btn .btn-float-right i {
+    font-size: 23px;
+    -webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+  .btn .btn-float-left:not(.bgm-gray) i, .btn .btn-float-right:not(.bgm-gray) i {
+    color: #ccc; }
+
+.no-shadow {
+  box-shadow: none !important; }
+
+.border-blue {
+  border: 1px solid #03A9F4; }
+
+.card.debit-card {
+  margin: 80px 0 120px; }
+
+.panel {
+  padding: 10px;
+  background: #eee;
+  border: 1px solid #ddd; }
+
+.steps-container li {
+  list-style: none; }
+.steps-container .thumbnail {
+  border: none; }
+  .steps-container .thumbnail .caption {
+    padding: 0;
+    margin: 0; }
+    .steps-container .thumbnail .caption p {
+      font-size: 12px;
+      margin: 5px 0 0 0;
+      text-align: center; }
+
+.verification .input-group {
+  margin-bottom: 30px; }
+
+/* SELLERS SECTION */
+.announcement {
+  padding: 40px 0 60px; }
+  .announcement span {
+    font-weight: 200;
+    font-size: 30px; }
+
+.sellers h4 {
+  padding-top: 20px;
+  font-size: 25px; }
+.sellers p {
+  line-height: 1.9;
+  padding-top: 10px; }
+
+/* PRICING SECTION */
+.pricing, .marketing, .world-bg {
+  padding: 30px 0 60px; }
+
+.pricing h2 {
+  margin-bottom: 60px; }
+.pricing h5 {
+  font-weight: bold;
+  font-size: 3em;
+  padding: 0 50px 0 40px; }
+.pricing h2, .pricing h5 {
+  color: white;
+  text-align: center; }
+.pricing p {
+  line-height: 1.9;
+  font-size: 1.3em;
+  color: #0D47A1;
+  text-align: center;
+  padding: 20px; }
+
+.line-right {
+  border-right: 2px solid #1565C0; }
+
+/* WHO WE ARE SECTION */
+.f-hayek {
+  margin-top: 40px; }
+  .f-hayek p {
+    line-height: 1.9; }
+
+.mentions {
+  margin-top: 40px; }
+  .mentions h2 {
+    padding-top: 40px; }
+
+/* WORLD BACKGROUND SECTION */
+.world-bg {
+  background-color: #1A237E;
+  background-image: url("../img/world.png"); }
+
+.world-bg ::-webkit-input-placeholder, .jumbotron ::-webkit-input-placeholder {
+  color: white !important;
+  font-weight: 600;
+  font-size: 13px; }
+.world-bg :-moz-placeholder, .jumbotron :-moz-placeholder {
+  /* Firefox 18- */
+  color: white !important;
+  font-weight: 600;
+  font-size: 13px; }
+.world-bg ::-moz-placeholder, .jumbotron ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white !important;
+  font-weight: 600;
+  font-size: 13px; }
+.world-bg :-ms-input-placeholder, .jumbotron :-ms-input-placeholder {
+  color: white !important;
+  font-weight: 600;
+  font-size: 13px; }
+.world-bg input, .jumbotron input {
+  font-size: 18px;
+  font-weight: 300; }
+.world-bg a, .jumbotron a {
+  color: #BBDEFB; }
+
+/* FOOTER */
+.social-icons {
+  margin-top: 10px; }
+  .social-icons a {
+    padding-left: 15px; }
+
+.page-footer {
+  padding-top: 30px; }
+
+.footer-links a {
+  padding-right: 15px;
+  color: #5e5e5e;
+  font-weight: 600; }
+
+.av-logo {
+  padding: 10px 0; }
+  .av-logo img {
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: -30px; }
+  .av-logo b {
+    padding-top: 50px; }
+
+.footer-copyright {
+  margin-top: 20px;
+  color: grey; }
+
+/* Large devices (Laptops, Desktops 1200px and up) */
+/* Medium devices (tablets, 992px and up) */
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #header.home-header {
+    padding-right: 0;
+    height: 70px;
+    background-color: #1A237E; }
+    #header.home-header .home-nav {
+      background-color: #1A237E; }
+    #header.home-header .navbar-collapse {
+      padding: 0 10px;
+      border: none; }
+    #header.home-header .navbar-toggle {
+      margin-top: 15px;
+      border: none; }
+      #header.home-header .navbar-toggle .icon-bar {
+        background-color: #FF9800; }
+      #header.home-header .navbar-toggle:hover, #header.home-header .navbar-toggle:focus {
+        background: #283593; }
+    #header.home-header .navbar-brand {
+      margin-left: 10px; }
+    #header.home-header .navbar-collapse .collapse .in {
+      border: none; } }

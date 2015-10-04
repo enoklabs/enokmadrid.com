@@ -1,0 +1,31 @@
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #header.home-header{
+    padding-right: 0;
+    height: 70px;
+    background-color: #1A237E;
+    .home-nav{
+      background-color: #1A237E;
+    }
+    .navbar-collapse{
+      padding: 0 10px;
+      border:none;
+    }
+    .navbar-toggle{
+      margin-top:15px;
+      border:none;
+      .icon-bar{
+        background-color: #FF9800;
+      }
+      &:hover, &:focus{
+        background: #283593;
+      }
+    }
+    .navbar-brand{
+      margin-left: 10px;
+    }
+    .navbar-collapse .collapse .in{
+      border:none;
+    }
+  }
+}
