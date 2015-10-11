@@ -1,7 +1,7 @@
 $blue-dark: #0D47A1;
 $blue:      #2196F3;
 $mid-blue:  #0D47A1;
-$lightblue: #03A9F4;
+$lightblue: #2096F3;
 $tone:      #0D47A1;
 $tone-light: scale-color($tone, $lightness: 15%);
 $tone-dark: scale-color($tone, $lightness: -25%);
@@ -93,7 +93,7 @@ section{ background-color: $gray-light;}
 
   .cta{
     z-index: 5;
-    padding: 40px 10px 80px;
+    padding: 40px 0 80px;
 
     .name{
       color: white;
@@ -240,38 +240,119 @@ section{ background-color: $gray-light;}
   font-weight:bold;
   text-transform: uppercase;
   padding-bottom: 10px;
-  border-bottom: solid 4px $lightblue;
+  // border-bottom: solid 4px $punch-tone;
   margin-bottom: 60px;
   text-align: center;
+}
+
+
+.recent-projects{
+  background: #2096F3;
+  .section-title{
+    color:white;
+  }
 }
 
 
 /* PORTFOLIO SECTION */
 
 .portfolio{
-  padding: 40px 0;
-  text-align: center;
+  background: $lightblue;
+  padding: 20px;
 
   .project{
-    .project-img{
-      width:400px;
-    }
-    .project-title{
-      padding-top: 10px;
-      font-size: 25px;
-      color: $lightblue;
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-    ul{
-      padding:0;
-      margin-top: 10px;
-      li{
-        display: inline-block;
-        list-style: none;
-        color: gray;
-        font-size: 11px;
-        padding: 0 5px;
+    padding: 0;
+    &:last-child{ border-right: none; }
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+
+    .tint {
+      position: relative;
+      float: left;
+      cursor: pointer;
+      width:100%;
+      height: 100%;
+
+      .project-img{
+        width:100%;
+        height: 100%;
+        &::after{
+          content: "";
+          background-color: red;
+          width: inherit;
+          height: inherit;
+          opacity: 0.5;
+        }
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width:100%;
+        height: 100%;
+        background: rgba($lightblue, 0.5);
+        -moz-transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+      }
+
+      &:hover:before {
+          background: rgba($blue-dark, 0.5);
+      }
+
+      .project-info{
+        -moz-transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        &:hover{ opacity: 1;}
+        opacity:0;
+        padding: 150px 20px 20px 20px;
+        margin-top: -290px;
+        position: absolute;
+        width: 100%;
+        height:100%;
+
+
+        /** GRADIENT FADE **/
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#03a9f4+0,03a9f4+100&amp;0+0,0.65+68 */
+        background: -moz-linear-gradient(top,  rgba(black,0) 0%, rgba(black,0.65) 68%, rgba(black,0.65) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(black,0)), color-stop(68%,rgba(black,0.65)), color-stop(100%,rgba(black,0.65))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(black,0) 0%,rgba(black,0.65) 68%,rgba(black,0.65) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(black,0) 0%,rgba(black,0.65) 68%,rgba(black,0.65) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(black,0) 0%,rgba(black,0.65) 68%,rgba(black,0.65) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(black,0) 0%,rgba(black,0.65) 68%,rgba(black,0.65) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0003a9f4', endColorstr='#a603a9f4',GradientType=0 ); /* IE6-9 */
+
+
+        .project-title{
+          font-size: 25px;
+          color: white;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+        .project-description{
+          color: $lightblue;
+          font-weight: 600;
+        }
+        ul{
+          padding:0;
+          // margin-top: 10px;
+          li{
+            display: inline-block;
+            list-style: none;
+            color: white;
+            font-size: 11px;
+            padding: 0 10px 0 0;
+          }
+        }
       }
     }
   }

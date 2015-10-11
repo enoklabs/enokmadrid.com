@@ -14,56 +14,76 @@
 </div><!-- End hero-image -->
 
 
+<section class="recent-projects">
+  <div class="container">
+    <div class="row">
+              <h2 class="section-title">Recent Projects</h2>
+    </div>
+  </div>
+</section>
+
 
 <!-- ICONS SECTION -->
-<section class="p-b-25 bgm-white portfolio">
+<section class="portfolio">
     <div class="container">
-
-
-        <h2 class="section-title">Recent Projects</h2>
-
-
-
         <div class="row">
 
-            <div class="col-lg-4 col-sm-6 col-xs-12 project">
-                <a href="project.php">
-                  <img class="project-img" src="img/hoatzinest_website.png" alt=""/>
-                  <h4 class="project-title">HoatziNest</h4>
-                </a>
-                <ul>
-                  <li>Research</li>
-                  <li>UX</li>
-                  <li>UI Design</li>
-                  <li>Front-End Development</li>
-                </ul>
-            </div>
 
-            <div class="col-lg-4 col-sm-6 col-xs-12 project">
-                <a href="project.php">
-                  <img class="project-img" src="img/hoatzinest_website.png" alt=""/>
-                  <h4 class="project-title">HoatziNest</h4>
-                </a>
-                <ul>
-                  <li>Research</li>
-                  <li>UX</li>
-                  <li>UI Design</li>
-                  <li>Front-End Development</li>
-                </ul>
-            </div>
+              <a href="project.php" class="col-lg-4 col-sm-6 col-xs-12 project">
+                  <figure class="tint">
+                      <img class="project-img" src="http://www.creativeda.sh/public/img/ui/passitalong_thumb.jpg" alt=""/>
 
-            <div class="col-lg-4 col-sm-6 col-xs-12 project">
-                <a href="project.php">
-                  <img class="project-img" src="img/hoatzinest_website.png" alt=""/>
-                  <h4 class="project-title">HoatziNest</h4>
-                </a>
-                <ul>
-                  <li>Research</li>
-                  <li>UX</li>
-                  <li>UI Design</li>
-                  <li>Front-End Development</li>
-                </ul>
-            </div>
+                      <div class="project-info">
+                          <h4 class="project-title">HoatziNest</h4>
+                          <span class="project-description">Description of the project goes here... etc</span>
+
+                          <ul>
+                              <li>Research</li>
+                              <li>UX</li>
+                              <li>UI Design</li>
+                              <li>Front-End Development</li>
+                          </ul>
+                      </div>
+                  </figure>
+              </a>
+
+
+              <a href="project.php" class="col-lg-4 col-sm-6 col-xs-12 project">
+                  <figure class="tint">
+                      <img class="project-img" src="http://www.creativeda.sh/public/img/ui/passitalong_thumb.jpg" alt=""/>
+
+                      <div class="project-info">
+                          <h4 class="project-title">HoatziNest</h4>
+                          <span class="project-description">Description of the project goes here... etc</span>
+
+                          <ul>
+                              <li>Research</li>
+                              <li>UX</li>
+                              <li>UI Design</li>
+                              <li>Front-End Development</li>
+                          </ul>
+                      </div>
+                  </figure>
+              </a>
+
+
+              <a href="project.php" class="col-lg-4 col-sm-6 col-xs-12 project">
+                  <figure class="tint">
+                      <img class="project-img" src="http://www.creativeda.sh/public/img/ui/passitalong_thumb.jpg" alt=""/>
+
+                      <div class="project-info">
+                          <h4 class="project-title">HoatziNest</h4>
+                          <span class="project-description">Description of the project goes here... etc</span>
+
+                          <ul>
+                              <li>Research</li>
+                              <li>UX</li>
+                              <li>UI Design</li>
+                              <li>Front-End Development</li>
+                          </ul>
+                      </div>
+                  </figure>
+              </a>
 
         </div>
     </div>

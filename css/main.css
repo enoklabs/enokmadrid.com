@@ -12,7 +12,7 @@ button, .btn {
   color: white !important; }
 
 i {
-  color: #03A9F4; }
+  color: #2096F3; }
 
 section {
   background-color: #fafafa; }
@@ -76,14 +76,14 @@ section {
   margin-bottom: 0; }
   .jumbotron .cta {
     z-index: 5;
-    padding: 40px 10px 80px; }
+    padding: 40px 0 80px; }
     .jumbotron .cta .name {
       color: white;
       font-size: 40px;
       font-weight: 300;
       text-transform: uppercase;
       letter-spacing: 4px;
-      border-bottom: 3px solid #03A9F4; }
+      border-bottom: 3px solid #2096F3; }
     .jumbotron .cta h1 {
       color: white;
       text-transform: uppercase;
@@ -184,31 +184,102 @@ section {
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 10px;
-  border-bottom: solid 4px #03A9F4;
   margin-bottom: 60px;
   text-align: center; }
 
+.recent-projects {
+  background: #2096F3; }
+  .recent-projects .section-title {
+    color: white; }
+
 /* PORTFOLIO SECTION */
 .portfolio {
-  padding: 40px 0;
-  text-align: center; }
-  .portfolio .project .project-img {
-    width: 400px; }
-  .portfolio .project .project-title {
-    padding-top: 10px;
-    font-size: 25px;
-    color: #03A9F4;
-    text-transform: uppercase;
-    font-weight: 600; }
-  .portfolio .project ul {
+  background: #2096F3;
+  padding: 20px; }
+  .portfolio .project {
     padding: 0;
-    margin-top: 10px; }
-    .portfolio .project ul li {
-      display: inline-block;
-      list-style: none;
-      color: gray;
-      font-size: 11px;
-      padding: 0 5px; }
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .portfolio .project:last-child {
+      border-right: none; }
+    .portfolio .project .tint {
+      position: relative;
+      float: left;
+      cursor: pointer;
+      width: 100%;
+      height: 100%; }
+      .portfolio .project .tint .project-img {
+        width: 100%;
+        height: 100%; }
+        .portfolio .project .tint .project-img::after {
+          content: "";
+          background-color: red;
+          width: inherit;
+          height: inherit;
+          opacity: 0.5; }
+      .portfolio .project .tint:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(32, 150, 243, 0.5);
+        -moz-transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear; }
+      .portfolio .project .tint:hover:before {
+        background: rgba(13, 71, 161, 0.5); }
+      .portfolio .project .tint .project-info {
+        -moz-transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        opacity: 0;
+        padding: 150px 20px 20px 20px;
+        margin-top: -290px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /** GRADIENT FADE **/
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#03a9f4+0,03a9f4+100&amp;0+0,0.65+68 */
+        background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 68%, rgba(0, 0, 0, 0.65) 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(68%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0.65)));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 68%, rgba(0, 0, 0, 0.65) 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 68%, rgba(0, 0, 0, 0.65) 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 68%, rgba(0, 0, 0, 0.65) 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 68%, rgba(0, 0, 0, 0.65) 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0003a9f4', endColorstr='#a603a9f4',GradientType=0 );
+        /* IE6-9 */ }
+        .portfolio .project .tint .project-info:hover {
+          opacity: 1; }
+        .portfolio .project .tint .project-info .project-title {
+          font-size: 25px;
+          color: white;
+          text-transform: uppercase;
+          font-weight: 600; }
+        .portfolio .project .tint .project-info .project-description {
+          color: #2096F3;
+          font-weight: 600; }
+        .portfolio .project .tint .project-info ul {
+          padding: 0; }
+          .portfolio .project .tint .project-info ul li {
+            display: inline-block;
+            list-style: none;
+            color: white;
+            font-size: 11px;
+            padding: 0 10px 0 0; }
 
 /* PRICING SECTION */
 .pricing, .project-view, .view-process {
@@ -295,7 +366,7 @@ footer {
     margin-top: 10px;
     padding-left: 0; }
     footer .social-icons i {
-      color: #03A9F4;
+      color: #2096F3;
       padding: 15px;
       cursor: pointer;
       transition: all 0.5s ease; }
@@ -317,7 +388,7 @@ footer {
       background-position-x: 10px;
       background-position-y: -160px; }
     footer .card .pv-body h2, footer .card .pv-body h3, footer .card .pv-body b {
-      color: #03A9F4; }
+      color: #2096F3; }
     footer .card .pv-body small, footer .card .pv-body p, footer .card .pv-body li {
       color: #757575; }
     footer .card .pv-body .pv-contact {
@@ -334,7 +405,7 @@ footer {
   .art-links li {
     margin: 0 5px; }
     .art-links li a {
-      color: #03A9F4;
+      color: #2096F3;
       font-weight: 600; }
 
 /* Large devices (Laptops, Desktops 1200px and up) */
