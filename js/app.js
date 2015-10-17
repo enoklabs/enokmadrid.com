@@ -12,4 +12,13 @@ $(document).ready(function(){
       $("html, body").animate({ scrollTop: $(document).height() }, 500);
     });
 
+
+    $('.project').mouseenter(function() {
+        // $(this).children('.project-info').css("opacity", "1");
+        $(this).find('.project-img').addClass("color");
+    }).mouseleave(function() {
+        // $(this).children('.project-info').css("opacity", "0");
+        $(this).find('.project-img').removeClass("color");
+    });
+
 });

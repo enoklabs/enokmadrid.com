@@ -1,30 +1,29 @@
-$blue-dark: #0D47A1;
-$blue:      #2196F3;
-$mid-blue:  #0D47A1;
-$lightblue: #2096F3;
-$tone:      #0D47A1;
-$tone-light: scale-color($tone, $lightness: 15%);
-$tone-dark: scale-color($tone, $lightness: -25%);
-$dark:      scale-color($tone, $lightness: -50%);
-$tone-text: scale-color($tone, $lightness: 70%);
-$text:      #757575;
-$punch-tone: #AEEA00;
-$gray-light: #fafafa;
+$blue:        #2196F3;
+$blue-light:  #2096F3;
+$blue-mid:    #0D47A1;
+$blue-dark:   #1A237E;
+$text:        #757575;
+$punch-tone:  #AEEA00;
+$gray-light:  #fafafa;
+$tone:        #0D47A1;
+$tone-light:  scale-color($tone, $lightness: 15%);
+$tone-dark:   scale-color($tone, $lightness: -25%);
+$tone-darker: scale-color($tone, $lightness: -50%);
+$tone-text:   scale-color($tone, $lightness: 70%);
 
 body{
   h1,h2,h3,h4,h5,h6{ font-family: 'futura-pt', sans-serif; }
   p, b, a, span, .pmbb-view, li, dd { font-family: 'proxima-nova',sans-serif; color: $text; line-height: 2;}
   font-size:15px;
-  background: $blue-dark;
+  background: $blue-mid;
 }
 button, .btn{ color: white !important;}
-i{ color: $lightblue;}
+i{ color: $blue-light;}
 section{ background-color: $gray-light;}
 
-/* .hidden{ display: none;} */
 #hero-image{
   position:relative;
-  background-color: rgba($blue-dark, 0.7);
+  background-color: rgba($blue-mid, 0.7);
   &::after {
     content: "";
     background: url('../img/hero-image.jpg');
@@ -42,7 +41,6 @@ section{ background-color: $gray-light;}
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 #header.home-header{
   background: transparent;
@@ -70,10 +68,10 @@ section{ background-color: $gray-light;}
       a{
         color: white;
         font-size: 18px;
-        font-weight: 500;
-        font-family: 'futura-pt', sans-serif;
+        font-weight: 600;
+        font-family: 'Proxima Nova', sans-serif;
         transition: all 0.5s ease;
-        &:hover{
+        &:hover, &:active, &:focus{
           color: $punch-tone;
         }
       }
@@ -101,7 +99,7 @@ section{ background-color: $gray-light;}
       font-weight: 300;
       text-transform: uppercase;
       letter-spacing: 4px;
-      border-bottom: 3px solid $lightblue;
+      border-bottom: 3px solid $blue-light;
     }
 
     h1{
@@ -120,7 +118,7 @@ section{ background-color: $gray-light;}
   }
   &.project{
     position:relative;
-    background-color: rgba($blue-dark, 0.7);
+    background-color: rgba($blue-mid, 0.7);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,68 +133,6 @@ section{ background-color: $gray-light;}
 }
 
 
-.user-name{
-  a{
-    top:-10px;
-    color: white;
-  }
-  &:not(#toggle-width):hover::before,
-  &:not(#toggle-width).open::before{
-    background: transparent !important;
-  }
-}
-
-
-.block-header {
-  .actions{
-    right:0;
-    top:10px;
-    button{
-      background: transparent;
-      box-shadow:none !important;
-      border: 1px solid #ccc;
-      height:30px;
-    }
-    input{
-      font-family: "fontawesome";
-      padding-left: 10px;
-      border: 1px solid #ccc;
-      border-radius:2px;
-      margin-top:-1px;
-    }
-    .fg-line{
-      top:-2px;
-    }
-  }
-}
-
-.btn{
-  .btn-float-far-right{ right: -25px; }
-  .btn-float-far-left{ left: -25px; }
-  .btn-float-left, .btn-float-right{
-    bottom: -23px;
-    z-index: 1;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    line-height: 38px;
-    i{
-      font-size: 23px;
-      -webkit-transition: all;
-      -o-transition: all;
-      transition: all;
-      -webkit-transition-duration: 500ms;
-      transition-duration: 500ms;
-    }
-    &:not(.bgm-gray){
-      i{
-        color: #ccc;
-      }
-    }
-  }
-}
-
 .no-shadow{
   box-shadow:none !important;
 }
@@ -210,28 +146,7 @@ section{ background-color: $gray-light;}
   background: #eee;
   border: 1px solid #ddd;
 }
-.steps-container{
- li{
-    list-style: none;
-  }
-  .thumbnail{
-    border:none;
-    .caption{
-      padding: 0;
-      margin:0;
-      p{
-        font-size: 12px;
-        margin:5px 0 0 0;
-        text-align:center;
-      }
-    }
-  }
-}
-.verification {
-  .input-group{
-    margin-bottom:30px;
-  }
-}
+
 
 
 .section-title{
@@ -240,7 +155,6 @@ section{ background-color: $gray-light;}
   font-weight:bold;
   text-transform: uppercase;
   padding-bottom: 10px;
-  // border-bottom: solid 4px $punch-tone;
   margin-bottom: 60px;
   text-align: center;
 }
@@ -254,164 +168,98 @@ section{ background-color: $gray-light;}
 }
 
 
-/* PORTFOLIO SECTION */
-
+/* ------ PORTFOLIO SECTION HOME PAGE ----------------------------------------- */
 .portfolio{
-  background: $lightblue;
-  padding: 20px;
+  background: $blue-light;
 
-  .project{
-    padding: 0;
-    &:last-child{ border-right: none; }
-    -moz-transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
+  /* --- Project Container configuration -------------------------------------- */
+  .project {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    padding:0;
 
-    .tint {
-      position: relative;
-      float: left;
-      cursor: pointer;
-      width:100%;
+    /* --- Hover background --------------------------------------------------- */
+    .project-info {
+      /** GRADIENT FADE **/
+      $tint: black;
+      $tint-percent: 0.65;
+      $tint-range: 80%;
+      background: -moz-linear-gradient(top,  rgba($tint,0) 0%, rgba($tint,$tint-percent) $tint-range, rgba($tint,$tint-percent) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($tint,0)), color-stop($tint-range,rgba($tint,$tint-percent)), color-stop(100%,rgba($tint,$tint-percent))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba($tint,0) 0%,rgba($tint,$tint-percent) $tint-range,rgba($tint,$tint-percent) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba($tint,0) 0%,rgba($tint,$tint-percent) $tint-range,rgba($tint,$tint-percent) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba($tint,0) 0%,rgba($tint,$tint-percent) $tint-range,rgba($tint,$tint-percent) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba($tint,0) 0%,rgba($tint,$tint-percent) $tint-range,rgba($tint,$tint-percent) 100%); /* W3C */
+
+      /** SIZE **/
       height: 100%;
+      width: 100%;
+      padding-top: 38%;
+      position: absolute;
+      text-align: center;
+      z-index: 100;
 
-      .project-img{
-        width:100%;
-        height: 100%;
-        &::after{
-          content: "";
-          background-color: red;
-          width: inherit;
-          height: inherit;
-          opacity: 0.5;
-        }
+      .project-title{
+        font-size: 25px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
       }
-
-      &:before {
-        content: "";
-        display: block;
-        position: absolute;
-        width:100%;
-        height: 100%;
-        background: rgba($lightblue, 0.5);
-        -moz-transition: all .3s linear;
-        -webkit-transition: all .3s linear;
-        -ms-transition: all .3s linear;
-        -o-transition: all .3s linear;
-        transition: all .3s linear;
-      }
-
-      &:hover:before {
-          background: rgba($blue-dark, 0.5);
-      }
-
-      .project-info{
-        -moz-transition: all .3s linear;
-        -webkit-transition: all .3s linear;
-        -ms-transition: all .3s linear;
-        -o-transition: all .3s linear;
-        transition: all .3s linear;
-        &:hover{ opacity: 1;}
-        opacity:0;
-        padding: 150px 20px 20px 20px;
-        margin-top: -290px;
-        position: absolute;
-        width: 100%;
-        height:100%;
-
-
-        /** GRADIENT FADE **/
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#03a9f4+0,03a9f4+100&amp;0+0,0.65+68 */
-        background: -moz-linear-gradient(top,  rgba(black,0) 0%, rgba(black,0.65) 68%, rgba(black,0.65) 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(black,0)), color-stop(68%,rgba(black,0.65)), color-stop(100%,rgba(black,0.65))); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  rgba(black,0) 0%,rgba(black,0.65) 68%,rgba(black,0.65) 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  rgba(black,0) 0%,rgba(black,0.65) 68%,rgba(black,0.65) 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  rgba(black,0) 0%,rgba(black,0.65) 68%,rgba(black,0.65) 100%); /* IE10+ */
-        background: linear-gradient(to bottom,  rgba(black,0) 0%,rgba(black,0.65) 68%,rgba(black,0.65) 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0003a9f4', endColorstr='#a603a9f4',GradientType=0 ); /* IE6-9 */
-
-
-        .project-title{
-          font-size: 25px;
-          color: white;
-          text-transform: uppercase;
+      .project-description {
+          display: block;
+          font-size: 16px;
+          color: $blue-light;
           font-weight: 600;
-        }
-        .project-description{
-          color: $lightblue;
-          font-weight: 600;
-        }
-        ul{
           padding:0;
-          // margin-top: 10px;
-          li{
-            display: inline-block;
-            list-style: none;
-            color: white;
-            font-size: 11px;
-            padding: 0 10px 0 0;
-          }
+      }
+      .project-tags{
+        padding:0;
+        li{
+          display: inline-block;
+          list-style: none;
+          color: #FFF;
+          font-size: 12px;
+          padding: 0 10px 0 0;
         }
+      }
+
+      /** SHOW/HIDE HOVER **/
+      opacity: 0;
+      $sec: .4s;
+      -moz-transition: all $sec linear;
+      -webkit-transition: all $sec linear;
+      -ms-transition: all $sec linear;
+      -o-transition: all $sec linear;
+      transition: all $sec linear;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    .project-img{
+      opacity: 0.7;
+      -webkit-filter: grayscale(80%);
+      filter: grayscale(80%);
+      $sec: .4s;
+      -moz-transition: all $sec linear;
+      -webkit-transition: all $sec linear;
+      -ms-transition: all $sec linear;
+      -o-transition: all $sec linear;
+      transition: all $sec linear;
+      &.color{
+        -webkit-filter: blur(3px) grayscale(60%);
+        filter: blur(3px) grayscale(60%);
       }
     }
   }
 }
 
 
-
-
-/* PRICING SECTION */
-.pricing, .project-view, .view-process{
-  padding: 30px 0 60px;
-}
-.pricing{
-  h2{
-    margin-bottom: 60px;
-  }
-  h5{
-    font-weight: bold;
-    font-size: 3em;
-    padding: 0 50px 0 40px;
-  }
-  h2, h5{
-    color: white;
-    text-align:center;
-  }
-  p{
-    line-height: 1.9;
-    font-size: 1.3em;
-    color: #0D47A1;
-    text-align: center;
-    padding: 20px;
-  }
-}
-.line-right{
-  border-right: 2px solid #1565C0;
-}
-
-
-/* WHO WE ARE SECTION */
-.f-hayek{
-  margin-top: 40px;
-  p{
-    line-height: 1.9;
-  }
-}
-.mentions{
-  margin-top: 40px;
-  h2{
-    padding-top: 40px;
-  }
-}
-
-
-
 /* VIEW PROCESS BACKGROUND SECTION */
 .view-process{
-  background-color:$tone;
+  background: $blue-mid;
   text-align: center;
-  /* background-image: url('../img/world.png'); */
   padding: 60px 0;
   a{
     color: white;
@@ -431,11 +279,82 @@ section{ background-color: $gray-light;}
 }
 
 
+/* ------ PORTFOLIO SECTION HOME PAGE ----------------------------------------- */
+.project-view{
+  background: white;
+  .container{
+    padding-top: 30px;
+    padding-bottom:30px;
+    h1,h2,h3,h4{
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .introduction{
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 1.8;
+      padding:45px 0;
+      text-align:center;
+      font-family: "Merriweather";
+    }
+    .project-info{
+      h4 { margin-top: 0; }
+      b{
+        display: inherit;
+        margin-top: 15px;
+        color: black;
+      }
+      ul{
+        list-style: none;
+        padding: 0;
+        li{
+          display: inline-block;
+          font-size: 13px;
+          color: $blue-light;
+          padding-right: 10px;
+        }
+      }
+      .btn{
+        background: $blue-light;
+        text-transform: none;
+        // color: scale-color($punch-tone, $lightness: -40%) !important;
+        i{ color: inherit; padding-right: 10px;}
+      }
+    }
+
+    .project-about{
+      .project-title{ margin-top: 0;}
+      p{
+        margin-top: 20px;
+        margin-bottom: 45px;
+        font-size: 20px;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+.project-images{
+  background: white;
+  p{
+    padding: 40px 0;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  img{
+    width: 100%;
+  }
+  padding-bottom: 60px;
+}
+
+
 
 /* FOOTER */
 footer{
   position:relative;
   background-color: rgba($tone, 0.6);
+  padding-top: 30px;
+  margin: 0;
 
   &::after {
     content: "";
@@ -451,9 +370,6 @@ footer{
     z-index: -1;
   }
 
-  padding-top: 30px;
-
-  margin: 0;
   .social-footer{
     // background: $tone;
     text-align: center;
@@ -470,7 +386,7 @@ footer{
     margin-top: 10px;
     padding-left:0;
     i{
-      color: $lightblue;
+      color: $blue-light;
       padding: 15px;
       cursor: pointer;
       transition: all 0.5s ease;
@@ -497,7 +413,7 @@ footer{
     }
 
     .pv-body {
-      h2,h3,b{ color: $lightblue;}
+      h2,h3,b{ color: $blue-light;}
       small,p,li{ color: $text;}
       .pv-contact{
         padding-top: 20px;
@@ -527,7 +443,7 @@ footer{
   li{
     margin: 0 5px;
     a{
-      color: $lightblue;
+      color: $blue-light;
       font-weight: 600;
     }
   }

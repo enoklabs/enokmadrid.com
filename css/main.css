@@ -17,7 +17,6 @@ i {
 section {
   background-color: #fafafa; }
 
-/* .hidden{ display: none;} */
 #hero-image {
   position: relative;
   background-color: rgba(13, 71, 161, 0.7);
@@ -60,10 +59,10 @@ section {
     .home-nav .nav li a {
       color: white;
       font-size: 18px;
-      font-weight: 500;
-      font-family: 'futura-pt', sans-serif;
+      font-weight: 600;
+      font-family: 'Proxima Nova', sans-serif;
       transition: all 0.5s ease; }
-      .home-nav .nav li a:hover {
+      .home-nav .nav li a:hover, .home-nav .nav li a:active, .home-nav .nav li a:focus {
         color: #AEEA00; }
     .home-nav .nav li button {
       top: 10px;
@@ -107,51 +106,6 @@ section {
 .navbar-collapse {
   padding: 0; }
 
-.user-name a {
-  top: -10px;
-  color: white; }
-.user-name:not(#toggle-width):hover::before, .user-name:not(#toggle-width).open::before {
-  background: transparent !important; }
-
-.block-header .actions {
-  right: 0;
-  top: 10px; }
-  .block-header .actions button {
-    background: transparent;
-    box-shadow: none !important;
-    border: 1px solid #ccc;
-    height: 30px; }
-  .block-header .actions input {
-    font-family: "fontawesome";
-    padding-left: 10px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    margin-top: -1px; }
-  .block-header .actions .fg-line {
-    top: -2px; }
-
-.btn .btn-float-far-right {
-  right: -25px; }
-.btn .btn-float-far-left {
-  left: -25px; }
-.btn .btn-float-left, .btn .btn-float-right {
-  bottom: -23px;
-  z-index: 1;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: absolute;
-  line-height: 38px; }
-  .btn .btn-float-left i, .btn .btn-float-right i {
-    font-size: 23px;
-    -webkit-transition: all;
-    -o-transition: all;
-    transition: all;
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms; }
-  .btn .btn-float-left:not(.bgm-gray) i, .btn .btn-float-right:not(.bgm-gray) i {
-    color: #ccc; }
-
 .no-shadow {
   box-shadow: none !important; }
 
@@ -162,21 +116,6 @@ section {
   padding: 10px;
   background: #eee;
   border: 1px solid #ddd; }
-
-.steps-container li {
-  list-style: none; }
-.steps-container .thumbnail {
-  border: none; }
-  .steps-container .thumbnail .caption {
-    padding: 0;
-    margin: 0; }
-    .steps-container .thumbnail .caption p {
-      font-size: 12px;
-      margin: 5px 0 0 0;
-      text-align: center; }
-
-.verification .input-group {
-  margin-bottom: 30px; }
 
 .section-title {
   display: inline-block;
@@ -192,134 +131,83 @@ section {
   .recent-projects .section-title {
     color: white; }
 
-/* PORTFOLIO SECTION */
+/* ------ PORTFOLIO SECTION HOME PAGE ----------------------------------------- */
 .portfolio {
   background: #2096F3;
-  padding: 20px; }
+  /* --- Project Container configuration -------------------------------------- */ }
   .portfolio .project {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    position: relative;
     padding: 0;
-    -moz-transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear; }
-    .portfolio .project:last-child {
-      border-right: none; }
-    .portfolio .project .tint {
-      position: relative;
-      float: left;
-      cursor: pointer;
+    /* --- Hover background --------------------------------------------------- */ }
+    .portfolio .project .project-info {
+      /** GRADIENT FADE **/
+      background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.65) 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(80%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0.65)));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.65) 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.65) 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.65) 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.65) 100%);
+      /* W3C */
+      /** SIZE **/
+      height: 100%;
       width: 100%;
-      height: 100%; }
-      .portfolio .project .tint .project-img {
-        width: 100%;
-        height: 100%; }
-        .portfolio .project .tint .project-img::after {
-          content: "";
-          background-color: red;
-          width: inherit;
-          height: inherit;
-          opacity: 0.5; }
-      .portfolio .project .tint:before {
-        content: "";
+      padding-top: 38%;
+      position: absolute;
+      text-align: center;
+      z-index: 100;
+      /** SHOW/HIDE HOVER **/
+      opacity: 0;
+      -moz-transition: all 0.4s linear;
+      -webkit-transition: all 0.4s linear;
+      -ms-transition: all 0.4s linear;
+      -o-transition: all 0.4s linear;
+      transition: all 0.4s linear; }
+      .portfolio .project .project-info .project-title {
+        font-size: 25px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600; }
+      .portfolio .project .project-info .project-description {
         display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgba(32, 150, 243, 0.5);
-        -moz-transition: all .3s linear;
-        -webkit-transition: all .3s linear;
-        -ms-transition: all .3s linear;
-        -o-transition: all .3s linear;
-        transition: all .3s linear; }
-      .portfolio .project .tint:hover:before {
-        background: rgba(13, 71, 161, 0.5); }
-      .portfolio .project .tint .project-info {
-        -moz-transition: all .3s linear;
-        -webkit-transition: all .3s linear;
-        -ms-transition: all .3s linear;
-        -o-transition: all .3s linear;
-        transition: all .3s linear;
-        opacity: 0;
-        padding: 150px 20px 20px 20px;
-        margin-top: -290px;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        /** GRADIENT FADE **/
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#03a9f4+0,03a9f4+100&amp;0+0,0.65+68 */
-        background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 68%, rgba(0, 0, 0, 0.65) 100%);
-        /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(68%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0.65)));
-        /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 68%, rgba(0, 0, 0, 0.65) 100%);
-        /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 68%, rgba(0, 0, 0, 0.65) 100%);
-        /* Opera 11.10+ */
-        background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 68%, rgba(0, 0, 0, 0.65) 100%);
-        /* IE10+ */
-        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 68%, rgba(0, 0, 0, 0.65) 100%);
-        /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0003a9f4', endColorstr='#a603a9f4',GradientType=0 );
-        /* IE6-9 */ }
-        .portfolio .project .tint .project-info:hover {
-          opacity: 1; }
-        .portfolio .project .tint .project-info .project-title {
-          font-size: 25px;
-          color: white;
-          text-transform: uppercase;
-          font-weight: 600; }
-        .portfolio .project .tint .project-info .project-description {
-          color: #2096F3;
-          font-weight: 600; }
-        .portfolio .project .tint .project-info ul {
-          padding: 0; }
-          .portfolio .project .tint .project-info ul li {
-            display: inline-block;
-            list-style: none;
-            color: white;
-            font-size: 11px;
-            padding: 0 10px 0 0; }
-
-/* PRICING SECTION */
-.pricing, .project-view, .view-process {
-  padding: 30px 0 60px; }
-
-.pricing h2 {
-  margin-bottom: 60px; }
-.pricing h5 {
-  font-weight: bold;
-  font-size: 3em;
-  padding: 0 50px 0 40px; }
-.pricing h2, .pricing h5 {
-  color: white;
-  text-align: center; }
-.pricing p {
-  line-height: 1.9;
-  font-size: 1.3em;
-  color: #0D47A1;
-  text-align: center;
-  padding: 20px; }
-
-.line-right {
-  border-right: 2px solid #1565C0; }
-
-/* WHO WE ARE SECTION */
-.f-hayek {
-  margin-top: 40px; }
-  .f-hayek p {
-    line-height: 1.9; }
-
-.mentions {
-  margin-top: 40px; }
-  .mentions h2 {
-    padding-top: 40px; }
+        font-size: 16px;
+        color: #2096F3;
+        font-weight: 600;
+        padding: 0; }
+      .portfolio .project .project-info .project-tags {
+        padding: 0; }
+        .portfolio .project .project-info .project-tags li {
+          display: inline-block;
+          list-style: none;
+          color: #FFF;
+          font-size: 12px;
+          padding: 0 10px 0 0; }
+      .portfolio .project .project-info:hover {
+        opacity: 1; }
+    .portfolio .project .project-img {
+      opacity: 0.7;
+      -webkit-filter: grayscale(80%);
+      filter: grayscale(80%);
+      -moz-transition: all 0.4s linear;
+      -webkit-transition: all 0.4s linear;
+      -ms-transition: all 0.4s linear;
+      -o-transition: all 0.4s linear;
+      transition: all 0.4s linear; }
+      .portfolio .project .project-img.color {
+        -webkit-filter: blur(3px) grayscale(60%);
+        filter: blur(3px) grayscale(60%); }
 
 /* VIEW PROCESS BACKGROUND SECTION */
 .view-process {
-  background-color: #0D47A1;
+  background: #0D47A1;
   text-align: center;
-  /* background-image: url('../img/world.png'); */
   padding: 60px 0; }
   .view-process a {
     color: white;
@@ -334,6 +222,60 @@ section {
     background: #fafafa !important; }
   #profile-main .pm-body {
     border: 1px solid #eee; }
+
+/* ------ PORTFOLIO SECTION HOME PAGE ----------------------------------------- */
+.project-view {
+  background: white; }
+  .project-view .container {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .project-view .container h1, .project-view .container h2, .project-view .container h3, .project-view .container h4 {
+      font-weight: 600;
+      text-transform: uppercase; }
+    .project-view .container .introduction {
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 1.8;
+      padding: 45px 0;
+      text-align: center;
+      font-family: "Merriweather"; }
+    .project-view .container .project-info h4 {
+      margin-top: 0; }
+    .project-view .container .project-info b {
+      display: inherit;
+      margin-top: 15px;
+      color: black; }
+    .project-view .container .project-info ul {
+      list-style: none;
+      padding: 0; }
+      .project-view .container .project-info ul li {
+        display: inline-block;
+        font-size: 13px;
+        color: #2096F3;
+        padding-right: 10px; }
+    .project-view .container .project-info .btn {
+      background: #2096F3;
+      text-transform: none; }
+      .project-view .container .project-info .btn i {
+        color: inherit;
+        padding-right: 10px; }
+    .project-view .container .project-about .project-title {
+      margin-top: 0; }
+    .project-view .container .project-about p {
+      margin-top: 20px;
+      margin-bottom: 45px;
+      font-size: 20px;
+      line-height: 1.8; }
+
+.project-images {
+  background: white;
+  padding-bottom: 60px; }
+  .project-images p {
+    padding: 40px 0;
+    font-size: 20px;
+    line-height: 1.8; }
+  .project-images img {
+    width: 100%; }
 
 /* FOOTER */
 footer {

@@ -40,7 +40,7 @@
 <!--  PROJECT  -->
 <section class="jumbotron project" style="background-image:url('../img/project.jpg')">
     <div class="container cta text-center">
-        <h1 ><small class="c-white">The Project Title</small></h1>
+        <h1 ><small class="c-white">Anthem Vault</small></h1>
     </div>
 </section>
 <!--  END PROCESS -->
@@ -52,38 +52,62 @@
 
 
 
-<section class="bgm-white project-view">
+<section class="project-view">
   <div class="container">
 
-    <div class="row">
-      <div class="card col-md-8">
-          <div class="card-body card-padding">
-              <div class="row">
-                  <div class="col-sm-12">
-                      <h1 class="f-600 c-black m-b-20">Header 1</h1>
-                      <h3 class="f-600 c-black m-b-20">Header 3</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                      </p>
-                      <div class="embed-responsive embed-responsive-16by9">
-                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AtVD3_05vCk"></iframe>
-                      </div>
+    <p class="introduction">
+    There was about to be a monumental change in the Gold industry. I was brought on to clean up their Identity and bring a world class look to a world class company.
+    </p>
 
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <img src="http://placehold.it/700x300" alt="" />
-                      </div>
-                  </div>
-              </div>
-          </div>
+    <div class="row m-t-25">
+
+      <div class="project-info col-sm-3">
+          <h4>Project Info</h4>
+          <b>Client:</b>
+          <p>Anthem Vault, one of the leader in Gold industry and Economics.</p>
+
+          <ul>
+            <li>Research</li>
+            <li>UX</li>
+            <li>Wireframes</li>
+            <li>Style Guides</li>
+            <li>Illustrations</li>
+            <li>UI Design</li>
+            <li>Front-End Dev</li>
+          </ul>
+
+          <a class="btn no-shadow"><i class="md-share"></i> Share this project</a>
       </div>
 
 
-      <div class="col-sm-3 col-md-offset-1 text-right">
-          <h3 class="f-500 c-black m-b-20">Project Description</h3>
-          <p>Austrian economist and thought-leader, Fredrich A. Hayek, is a historic figure who forever shaped free market economics. Curiously enough the CEO of HayekGold carries the middle name 'Hayek' as well!</p>
+      <div class="project-about col-sm-8 col-sm-offset-1">
+          <h3 class="project-title">The Challenge</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
 
+          <h3 class="project-title-work">Getting to Work</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
       </div>
+
+
+
     </div>
+
+  </div>
+</section>
+
+
+<section class="project-images">
+  <div class="container">
+      <img src="http://placehold.it/1140x500" alt=""/>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <img src="http://placehold.it/1140x500" alt=""/>
+      <img src="http://placehold.it/1140x500" alt=""/>
 
   </div>
 </section>
@@ -98,39 +122,38 @@
 <script src="../js/jquery-2.1.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 
-<script src="//use.typekit.net/ouo0ddh.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+<script src="https://use.typekit.net/ouo0ddh.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-<script src="../vendors/flot/jquery.flot.min.js"></script>
+<!-- <script src="../vendors/flot/jquery.flot.min.js"></script>
 <script src="../vendors/flot/jquery.flot.resize.min.js"></script>
 <script src="../vendors/flot/plugins/curvedLines.js"></script>
 <script src="../vendors/sparklines/jquery.sparkline.min.js"></script>
-<script src="../vendors/easypiechart/jquery.easypiechart.min.js"></script>
+<script src="../vendors/easypiechart/jquery.easypiechart.min.js"></script> -->
 
-<script src="../vendors/fullcalendar/lib/moment.min.js"></script>
+<!-- <script src="../vendors/fullcalendar/lib/moment.min.js"></script>
 <script src="../vendors/fullcalendar/fullcalendar.min.js"></script>
-<script src="../vendors/simpleWeather/jquery.simpleWeather.min.js"></script>
+<script src="../vendors/simpleWeather/jquery.simpleWeather.min.js"></script> -->
 <script src="../vendors/auto-size/jquery.autosize.min.js"></script>
 <script src="../vendors/nicescroll/jquery.nicescroll.min.js"></script>
-<script src="../vendors/moment/moment.min.js"></script>
+<!-- <script src="../vendors/moment/moment.min.js"></script> -->
 <script src="../vendors/bootstrap-select/bootstrap-select.min.js"></script>
-<script src="../vendors/chosen/chosen.jquery.min.js"></script>
+<!-- <script src="../vendors/chosen/chosen.jquery.min.js"></script>
 <script src="../vendors/noUiSlider/jquery.nouislider.all.min.js"></script>
 <script src="../vendors/input-mask/input-mask.min.js"></script>
 <script src="../vendors/farbtastic/farbtastic.min.js"></script>
 <script src="../vendors/summernote/summernote.min.js"></script>
 <script src="../vendors/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
-<script src="../vendors/fileinput/fileinput.min.js"></script>
+<script src="../vendors/fileinput/fileinput.min.js"></script> -->
 <script src="../vendors/waves/waves.min.js"></script>
-<script src="../vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
-<script src="../vendors/sweet-alert/sweet-alert.min.js"></script>
-<script src="../vendors/mediaelement/mediaelement-and-player.min.js"></script>
+<!-- <script src="../vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+<script src="../vendors/sweet-alert/sweet-alert.min.js"></script> -->
+<!-- <script src="../vendors/mediaelement/mediaelement-and-player.min.js"></script> -->
 
-<script src="../js/flot-charts/curved-line-chart.js"></script>
+<!-- <script src="../js/flot-charts/curved-line-chart.js"></script>
 <script src="../js/flot-charts/line-chart.js"></script>
-<script src="../js/charts.js"></script>
+<script src="../js/charts.js"></script> -->
 
-<script src="../js/charts.js"></script>
 <script src="../js/functions.js"></script>
 
 <!-- CUSTOM SCRIPTS -->

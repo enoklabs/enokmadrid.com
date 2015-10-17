@@ -25,65 +25,51 @@
 
 <!-- ICONS SECTION -->
 <section class="portfolio">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
 
-
-              <a href="project.php" class="col-lg-4 col-sm-6 col-xs-12 project">
-                  <figure class="tint">
-                      <img class="project-img" src="http://www.creativeda.sh/public/img/ui/passitalong_thumb.jpg" alt=""/>
-
-                      <div class="project-info">
-                          <h4 class="project-title">HoatziNest</h4>
-                          <span class="project-description">Description of the project goes here... etc</span>
-
-                          <ul>
-                              <li>Research</li>
-                              <li>UX</li>
-                              <li>UI Design</li>
-                              <li>Front-End Development</li>
-                          </ul>
-                      </div>
-                  </figure>
+              <a href="project.php" class="project col-lg-4 col-sm-6 col-xs-12">
+                  <div class="project-info">
+                    <h4 class="project-title">Project Title Here</h4>
+                    <!-- <span class="project-description">Project Description</span> -->
+                    <ul class="project-tags">
+                      <li>Research</li>
+                      <li>UX</li>
+                      <li>UI Design</li>
+                      <li>Front-End Development</li>
+                    </ul>
+                  </div>
+                  <img src="img/mac.jpg" alt="Project" class="project-img img-responsive"/>
               </a>
 
-
-              <a href="project.php" class="col-lg-4 col-sm-6 col-xs-12 project">
-                  <figure class="tint">
-                      <img class="project-img" src="http://www.creativeda.sh/public/img/ui/passitalong_thumb.jpg" alt=""/>
-
-                      <div class="project-info">
-                          <h4 class="project-title">HoatziNest</h4>
-                          <span class="project-description">Description of the project goes here... etc</span>
-
-                          <ul>
-                              <li>Research</li>
-                              <li>UX</li>
-                              <li>UI Design</li>
-                              <li>Front-End Development</li>
-                          </ul>
-                      </div>
-                  </figure>
+              <a href="project.php" class="project col-lg-4 col-sm-6 col-xs-12">
+                  <div class="project-info">
+                    <h4 class="project-title">Project Title Here</h4>
+                    <!-- <span class="project-description">Project Description</span> -->
+                    <ul class="project-tags">
+                      <li>Research</li>
+                      <li>UX</li>
+                      <li>UI Design</li>
+                      <li>Front-End Development</li>
+                    </ul>
+                  </div>
+                  <img src="img/mac2.jpg" alt="Project" class="project-img img-responsive"/>
               </a>
 
-
-              <a href="project.php" class="col-lg-4 col-sm-6 col-xs-12 project">
-                  <figure class="tint">
-                      <img class="project-img" src="http://www.creativeda.sh/public/img/ui/passitalong_thumb.jpg" alt=""/>
-
-                      <div class="project-info">
-                          <h4 class="project-title">HoatziNest</h4>
-                          <span class="project-description">Description of the project goes here... etc</span>
-
-                          <ul>
-                              <li>Research</li>
-                              <li>UX</li>
-                              <li>UI Design</li>
-                              <li>Front-End Development</li>
-                          </ul>
-                      </div>
-                  </figure>
+              <a href="project.php" class="project col-lg-4 col-sm-6 col-xs-12">
+                  <div class="project-info">
+                    <h4 class="project-title">Project Title Here</h4>
+                    <!-- <span class="project-description">Project Description</span> -->
+                    <ul class="project-tags">
+                      <li>Research</li>
+                      <li>UX</li>
+                      <li>UI Design</li>
+                      <li>Front-End Development</li>
+                    </ul>
+                  </div>
+                  <img src="img/mac.jpg" alt="Project" class="project-img img-responsive"/>
               </a>
+
 
         </div>
     </div>
