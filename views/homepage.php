@@ -7,7 +7,7 @@
             <h1 class="c-white">UI/Ux Designer<br> Branding <br>
               <small>Front-End Developer</small>
             </h1>
-            <a class="button btn btn-lg bgm-transparent-punch">Let's Connect</a>
+            <a class="button btn btn-lg bgm-transparent-punch no-shadow">Let's Connect</a>
         </div>
     </section>
     <!--  END HOME CTA Jumbotron -->

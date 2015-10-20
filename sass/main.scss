@@ -302,23 +302,6 @@ section{ background-color: $gray-light;}
   }
 }
 
-
-/* ------- VIEW PROCESS BACKGROUND SECTION -------- */
-.view-process{
-  background: $blue-mid;
-  text-align: center;
-  padding: 60px 0;
-  a{
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding-top:10px;
-  }
-
-}
-
-
 #profile-main{
   box-shadow: none;
   .pm-overview{ background: $gray-light !important; }
@@ -395,6 +378,32 @@ section{ background-color: $gray-light;}
 }
 
 
+
+/* ------- VIEW PROCESS BACKGROUND SECTION -------- */
+.view-process{
+  background: $blue-mid;
+  text-align: center;
+  padding: 60px 0;
+  a{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top:10px;
+  }
+
+}
+
+
+
+/* ------ PROCESS CONTENT ----------------------------------------- */
+.process-content{
+  @include verticalPadding(80px);
+  p{
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
 
 /* FOOTER */
 footer{

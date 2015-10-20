@@ -245,18 +245,6 @@ section {
         -webkit-filter: blur(3px) grayscale(60%);
         filter: blur(3px) grayscale(60%); }
 
-/* ------- VIEW PROCESS BACKGROUND SECTION -------- */
-.view-process {
-  background: #0D47A1;
-  text-align: center;
-  padding: 60px 0; }
-  .view-process a {
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding-top: 10px; }
-
 #profile-main {
   box-shadow: none; }
   #profile-main .pm-overview {
@@ -317,6 +305,26 @@ section {
     line-height: 1.8; }
   .project-images img {
     width: 100%; }
+
+/* ------- VIEW PROCESS BACKGROUND SECTION -------- */
+.view-process {
+  background: #0D47A1;
+  text-align: center;
+  padding: 60px 0; }
+  .view-process a {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 10px; }
+
+/* ------ PROCESS CONTENT ----------------------------------------- */
+.process-content {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .process-content p {
+    padding-top: 20px;
+    padding-bottom: 40px; }
 
 /* FOOTER */
 footer {
