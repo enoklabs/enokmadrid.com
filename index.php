@@ -9,15 +9,15 @@
     <title>Enok Madrid</title>
 
     <!-- Vendor CSS -->
-    <link href="../vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <!-- <link href="../vendors/fullcalendar/fullcalendar.css" rel="stylesheet"> -->
     <link href="../vendors/animate-css/animate.min.css" rel="stylesheet">
-    <link href="../vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+    <!-- <link href="../vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet"> -->
     <link href="../vendors/material-icons/material-design-iconic-font.min.css" rel="stylesheet">
     <link href="../vendors/socicon/socicon.min.css" rel="stylesheet">
-    <link href="../vendors/noUiSlider/jquery.nouislider.min.css" rel="stylesheet">
-    <link href="../vendors/farbtastic/farbtastic.css" rel="stylesheet">
-    <link href="../vendors/summernote/summernote.css" rel="stylesheet">
-    <link href="../vendors/mediaelement/mediaelementplayer.css" rel="stylesheet">
+    <!-- <link href="../vendors/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"> -->
+    <!-- <link href="../vendors/farbtastic/farbtastic.css" rel="stylesheet"> -->
+    <!-- <link href="../vendors/summernote/summernote.css" rel="stylesheet"> -->
+    <!-- <link href="../vendors/mediaelement/mediaelementplayer.css" rel="stylesheet"> -->
 
     <!-- CSS -->
     <link href="../css/app.min.1.css" rel="stylesheet">
@@ -53,7 +53,7 @@
 <script src="../vendors/fullcalendar/fullcalendar.min.js"></script>
 <script src="../vendors/simpleWeather/jquery.simpleWeather.min.js"></script> -->
 <script src="../vendors/auto-size/jquery.autosize.min.js"></script>
-<script src="../vendors/nicescroll/jquery.nicescroll.min.js"></script>
+<!-- <script src="../vendors/nicescroll/jquery.nicescroll.min.js"></script> -->
 <!-- <script src="../vendors/moment/moment.min.js"></script> -->
 <script src="../vendors/bootstrap-select/bootstrap-select.min.js"></script>
 <!-- <script src="../vendors/chosen/chosen.jquery.min.js"></script>

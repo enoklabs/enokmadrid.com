@@ -1,3 +1,6 @@
+/* ------ UI COLORS ----- */
+/* ------ UI COLORS ----- */
+/* ------ UI ELEMENTS ------ */
 body {
   font-size: 15px;
   background: #0D47A1; }
@@ -9,7 +12,25 @@ body {
     line-height: 2; }
 
 button, .btn {
-  color: white !important; }
+  border-radius: 30px;
+  font-weight: 700;
+  text-transform: none;
+  font-family: 'Proxima Nova', sans-serif; }
+  button.btn-lg, .btn.btn-lg {
+    padding: 12px 25px; }
+  button.btn-sm, .btn.btn-sm {
+    padding: 5px 12px; }
+  button.bgm-transparent-punch, .btn.bgm-transparent-punch {
+    border: 2px solid #AEEA00;
+    background-color: transparent;
+    color: #AEEA00; }
+    button.bgm-transparent-punch:hover, .btn.bgm-transparent-punch:hover {
+      background-color: #AEEA00;
+      color: #465e00; }
+  button.bgm-transparent, .btn.bgm-transparent {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white !important; }
 
 i {
   color: #2096F3; }
@@ -17,6 +38,34 @@ i {
 section {
   background-color: #fafafa; }
 
+.navbar-collapse {
+  padding: 0; }
+
+.no-shadow {
+  box-shadow: none !important; }
+
+.border-blue {
+  border: 1px solid #03A9F4; }
+
+.panel {
+  padding: 10px;
+  background: #eee;
+  border: 1px solid #ddd; }
+
+.section-title {
+  display: inline-block;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; }
+
+.section-subtitle {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.8;
+  font-family: "Merriweather"; }
+
+/* ------ HERO INTRO ------ */
 #hero-image {
   position: relative;
   background-color: rgba(13, 71, 161, 0.7);
@@ -103,45 +152,39 @@ section {
     padding-top: 100px;
     margin-top: -65px; }
 
-.navbar-collapse {
-  padding: 0; }
+/* ------ ABOUT ME INTRODUCTION ----------------------------------------- */
+.about-me {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: white; }
+  .about-me .section-title {
+    color: black;
+    margin-bottom: 20px; }
+  .about-me .about-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 60px;
+    -moz-column-gap: 60px;
+    column-gap: 60px; }
 
-.no-shadow {
-  box-shadow: none !important; }
-
-.border-blue {
-  border: 1px solid #03A9F4; }
-
-.panel {
-  padding: 10px;
-  background: #eee;
-  border: 1px solid #ddd; }
-
-.section-title {
-  display: inline-block;
-  font-size: 36px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  margin-bottom: 60px;
-  text-align: center; }
-
-.recent-projects {
-  background: #2096F3; }
-  .recent-projects .section-title {
-    color: white; }
+.my-work {
+  padding-top: 80px;
+  padding-bottom: 80px; }
 
 /* ------ PORTFOLIO SECTION HOME PAGE ----------------------------------------- */
 .portfolio {
   background: #2096F3;
-  /* --- Project Container configuration -------------------------------------- */ }
+  /* ------ Project Container configuration ------- */ }
   .portfolio .project {
     display: block;
     position: relative;
     overflow: hidden;
     position: relative;
     padding: 0;
-    /* --- Hover background --------------------------------------------------- */ }
+    /* ------ Hover background ------ */ }
     .portfolio .project .project-info {
       /** GRADIENT FADE **/
       background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.65) 100%);
@@ -193,8 +236,6 @@ section {
         opacity: 1; }
     .portfolio .project .project-img {
       opacity: 0.7;
-      -webkit-filter: grayscale(80%);
-      filter: grayscale(80%);
       -moz-transition: all 0.4s linear;
       -webkit-transition: all 0.4s linear;
       -ms-transition: all 0.4s linear;
@@ -204,7 +245,7 @@ section {
         -webkit-filter: blur(3px) grayscale(60%);
         filter: blur(3px) grayscale(60%); }
 
-/* VIEW PROCESS BACKGROUND SECTION */
+/* ------- VIEW PROCESS BACKGROUND SECTION -------- */
 .view-process {
   background: #0D47A1;
   text-align: center;

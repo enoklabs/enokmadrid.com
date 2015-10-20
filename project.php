@@ -9,15 +9,9 @@
     <title>Enok Madrid</title>
 
     <!-- Vendor CSS -->
-    <link href="../vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
     <link href="../vendors/animate-css/animate.min.css" rel="stylesheet">
-    <link href="../vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
     <link href="../vendors/material-icons/material-design-iconic-font.min.css" rel="stylesheet">
     <link href="../vendors/socicon/socicon.min.css" rel="stylesheet">
-    <link href="../vendors/noUiSlider/jquery.nouislider.min.css" rel="stylesheet">
-    <link href="../vendors/farbtastic/farbtastic.css" rel="stylesheet">
-    <link href="../vendors/summernote/summernote.css" rel="stylesheet">
-    <link href="../vendors/mediaelement/mediaelementplayer.css" rel="stylesheet">
 
     <!-- CSS -->
     <link href="../css/app.min.1.css" rel="stylesheet">
@@ -76,7 +70,7 @@
             <li>Front-End Dev</li>
           </ul>
 
-          <a class="btn no-shadow"><i class="md-share"></i> Share this project</a>
+          <a class="btn c-white no-shadow"><i class="md-share"></i> Share this project</a>
       </div>
 
 
@@ -110,6 +104,49 @@
       <img src="http://placehold.it/1140x500" alt=""/>
 
   </div>
+</section>
+
+
+
+
+<!-- PORTFOLIO SECTION -->
+<section class="portfolio">
+    <div class="container-fluid">
+        <div class="row">
+
+          <?php
+            $x = 1;
+            while($x <= 3) { ?>
+
+             <a href="project.php" class="project col-lg-4 col-sm-6 col-xs-12">
+                 <div class="project-info">
+                   <h4 class="project-title">Project Title Here</h4>
+                   <!-- <span class="project-description">Project Description</span> -->
+                   <ul class="project-tags">
+                     <li>Research</li>
+                     <li>UX</li>
+                     <li>UI Design</li>
+                     <li>Front-End Development</li>
+                   </ul>
+                 </div>
+                 <img src="img/mac.jpg" alt="Project" class="project-img img-responsive"/>
+             </a>
+
+           <?php $x++; } ?>
+
+        </div>
+    </div>
+</section>
+<!-- END PORTFOLIO SECTION -->
+
+<section class="view-process">
+    <div class="container c-white">
+      <div class="row">
+
+            <a href="process.php" class="process-link tk-futura-pt">View Process <i class="fa fa-arrow-right c-white"></i></a>
+
+      </div>
+    </div>
 </section>
 
 

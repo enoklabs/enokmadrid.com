@@ -1,3 +1,6 @@
+@import 'functions';
+
+/* ------ UI COLORS ----- */
 $blue:        #2196F3;
 $blue-light:  #2096F3;
 $blue-mid:    #0D47A1;
@@ -10,17 +13,74 @@ $tone-light:  scale-color($tone, $lightness: 15%);
 $tone-dark:   scale-color($tone, $lightness: -25%);
 $tone-darker: scale-color($tone, $lightness: -50%);
 $tone-text:   scale-color($tone, $lightness: 70%);
+/* ------ UI COLORS ----- */
 
+
+/* ------ UI ELEMENTS ------ */
 body{
   h1,h2,h3,h4,h5,h6{ font-family: 'futura-pt', sans-serif; }
   p, b, a, span, .pmbb-view, li, dd { font-family: 'proxima-nova',sans-serif; color: $text; line-height: 2;}
   font-size:15px;
   background: $blue-mid;
 }
-button, .btn{ color: white !important;}
+button, .btn{
+  border-radius: 30px;
+  font-weight: 700;
+  text-transform: none;
+  font-family: 'Proxima Nova', sans-serif;
+  &.btn-lg{ padding: 12px 25px; }
+  &.btn-sm{
+    padding: 5px 12px;
+  }
+  &.bgm-transparent-punch{
+    border: 2px solid $punch-tone;
+    background-color: transparent;
+    color: $punch-tone;
+    &:hover{
+      background-color: $punch-tone;
+      color: scale-color($punch-tone, $lightness: -60%);
+    }
+  }
+  &.bgm-transparent{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white !important;
+  }
+}
+
 i{ color: $blue-light;}
 section{ background-color: $gray-light;}
 
+.navbar-collapse{
+  padding:0;
+}
+.no-shadow{
+  box-shadow:none !important;
+}
+.border-blue{
+  border: 1px solid #03A9F4;
+}
+.panel{
+  padding:10px;
+  background: #eee;
+  border: 1px solid #ddd;
+}
+.section-title{
+  display: inline-block;
+  font-size: 36px;
+  font-weight:bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-subtitle{
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.8;
+  font-family: "Merriweather";
+}
+
+
+/* ------ HERO INTRO ------ */
 #hero-image{
   position:relative;
   background-color: rgba($blue-mid, 0.7);
@@ -128,43 +188,30 @@ section{ background-color: $gray-light;}
 }
 
 
-.navbar-collapse{
-  padding:0;
-}
-
-
-.no-shadow{
-  box-shadow:none !important;
-}
-
-.border-blue{
-  border: 1px solid #03A9F4;
-}
-
-.panel{
-  padding:10px;
-  background: #eee;
-  border: 1px solid #ddd;
-}
-
-
-
-.section-title{
-  display: inline-block;
-  font-size: 36px;
-  font-weight:bold;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-
-.recent-projects{
-  background: #2096F3;
+/* ------ ABOUT ME INTRODUCTION ----------------------------------------- */
+.about-me{
+  @include verticalPadding(80px);
+  background: white;
   .section-title{
-    color:white;
+    color:black;
+    margin-bottom: 20px;
   }
+  .about-content{
+    @include verticalPadding(20px);
+
+    // paragraph columns
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 60px;
+    -moz-column-gap: 60px;
+    column-gap: 60px;
+  }
+}
+
+
+.my-work{
+  @include verticalPadding(80px);
 }
 
 
@@ -172,7 +219,7 @@ section{ background-color: $gray-light;}
 .portfolio{
   background: $blue-light;
 
-  /* --- Project Container configuration -------------------------------------- */
+  /* ------ Project Container configuration ------- */
   .project {
     display: block;
     position: relative;
@@ -180,7 +227,7 @@ section{ background-color: $gray-light;}
     position: relative;
     padding:0;
 
-    /* --- Hover background --------------------------------------------------- */
+    /* ------ Hover background ------ */
     .project-info {
       /** GRADIENT FADE **/
       $tint: black;
@@ -239,8 +286,8 @@ section{ background-color: $gray-light;}
     }
     .project-img{
       opacity: 0.7;
-      -webkit-filter: grayscale(80%);
-      filter: grayscale(80%);
+      // -webkit-filter: grayscale(80%);
+      // filter: grayscale(80%);
       $sec: .4s;
       -moz-transition: all $sec linear;
       -webkit-transition: all $sec linear;
@@ -256,7 +303,7 @@ section{ background-color: $gray-light;}
 }
 
 
-/* VIEW PROCESS BACKGROUND SECTION */
+/* ------- VIEW PROCESS BACKGROUND SECTION -------- */
 .view-process{
   background: $blue-mid;
   text-align: center;
