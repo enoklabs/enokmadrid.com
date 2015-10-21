@@ -2,14 +2,17 @@
 /* ------ UI COLORS ----- */
 /* ------ UI ELEMENTS ------ */
 body {
+  font-family: 'proxima-nova',sans-serif;
   font-size: 15px;
   background: #0D47A1; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: 'futura-pt', sans-serif; }
-  body p, body b, body a, body span, body .pmbb-view, body li, body dd {
+  body p, body b, body span, body .pmbb-view, body li, body dd {
     font-family: 'proxima-nova',sans-serif;
     color: #757575;
     line-height: 2; }
+  body a {
+    color: #2096F3; }
 
 button, .btn {
   border-radius: 30px;

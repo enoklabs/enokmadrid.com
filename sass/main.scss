@@ -18,10 +18,12 @@ $tone-text:   scale-color($tone, $lightness: 70%);
 
 /* ------ UI ELEMENTS ------ */
 body{
+  font-family: 'proxima-nova',sans-serif;
   h1,h2,h3,h4,h5,h6{ font-family: 'futura-pt', sans-serif; }
-  p, b, a, span, .pmbb-view, li, dd { font-family: 'proxima-nova',sans-serif; color: $text; line-height: 2;}
+  p, b, span, .pmbb-view, li, dd { font-family: 'proxima-nova',sans-serif; color: $text; line-height: 2;}
   font-size:15px;
   background: $blue-mid;
+  a{ color: $blue-light;}
 }
 button, .btn{
   border-radius: 30px;
