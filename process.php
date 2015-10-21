@@ -92,8 +92,16 @@
 
 			<div class="cd-timeline-content">
 				<span class="cd-step">Step Two - Exploration</span>
+        <img src="http://placehold.it/90x90" alt="" />
 				<h2>Exploration, Information Architecture</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+        <em>Tools I like to use include:</em>
+        <ul>
+          <li>Tool one</li>
+          <li>Tool two</li>
+          <li>Tool three</li>
+          <li>Tool four</li>
+        </ul>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
@@ -103,8 +111,16 @@
 
 			<div class="cd-timeline-content">
         <span class="cd-step">Step Three - Design</span>
+        <img src="http://placehold.it/90x90" alt="" />
 				<h2>Design, Visual Layout</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+        <em>Tools I like to use include:</em>
+        <ul>
+          <li>Tool one</li>
+          <li>Tool two</li>
+          <li>Tool three</li>
+          <li>Tool four</li>
+        </ul>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
@@ -114,8 +130,16 @@
 
 			<div class="cd-timeline-content">
         <span class="cd-step">Step Four - Quality Assurence</span>
+        <img src="http://placehold.it/90x90" alt="" />
 				<h2>Quality Assurence, Testing and Micro Details</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+        <em>Tools I like to use include:</em>
+        <ul>
+          <li>Tool one</li>
+          <li>Tool two</li>
+          <li>Tool three</li>
+          <li>Tool four</li>
+        </ul>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 

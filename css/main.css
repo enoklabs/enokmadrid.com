@@ -532,7 +532,8 @@ Main components
   .cd-timeline-block img {
     float: left;
     padding-right: 30px;
-    width: 90px; }
+    width: 90px;
+    margin-top: 18px; }
   .cd-timeline-block h2 {
     font-size: 30px;
     font-weight: 500;
