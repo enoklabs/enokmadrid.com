@@ -29,9 +29,10 @@
 
 
 <!--  PROCESS  -->
-<section class="jumbotron">
+<section class="jumbotron process">
     <div class="container cta text-center">
-        <h1><small class="c-white">The Process</small></h1>
+        <h1><small class="c-white">My Process</small></h1>
+        <p>This is a high-level view of my core skills</p>
     </div>
 </section>
 <!--  END PROCESS -->
@@ -40,7 +41,8 @@
 
 
 
-<section class="process-content">
+
+<!-- <section class="process-content bgm-white">
   <div class="container">
 
     <div class="row text-center">
@@ -58,7 +60,62 @@
     </div>
 
   </div>
-</section>
+</section> -->
+
+
+
+<!-- TIME LINE -->
+<section id="cd-timeline" class="cd-container bgm-white">
+    <div class="container p-r-0 p-l-0">
+		<div class="cd-timeline-block">
+			<div class="cd-dot cd-picture">
+			</div> <!-- cd-dot -->
+
+			<div class="cd-timeline-content">
+				<span class="cd-step">Step One - Discovery</span>
+				<h2>Discovery, Product Data Analysis</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-dot cd-movie">
+			</div> <!-- cd-dot -->
+
+			<div class="cd-timeline-content">
+				<span class="cd-step">Step Two - Exploration</span>
+				<h2>Exploration, Information Architecture</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-dot cd-picture">
+			</div> <!-- cd-dot -->
+
+			<div class="cd-timeline-content">
+        <span class="cd-step">Step Three - Design</span>
+				<h2>Design, Visual Layout</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-dot cd-location">
+			</div> <!-- cd-dot -->
+
+			<div class="cd-timeline-content">
+        <span class="cd-step">Step Four - Quality Assurence</span>
+				<h2>Quality Assurence, Testing and Micro Details</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+
+  </div>
+	</section> <!-- cd-timeline -->
+
+
 
 <?php include('partials/footer.php'); ?>
 
@@ -77,6 +134,7 @@
 <script src="../js/functions.js"></script>
 
 <!-- CUSTOM SCRIPTS -->
+<script src="../js/modernizer.js"></script>
 <script src="../js/app.js"></script>
 
 </body>

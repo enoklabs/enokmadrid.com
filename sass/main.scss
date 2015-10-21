@@ -81,15 +81,17 @@ section{ background-color: $gray-light;}
 
 
 /* ------ HERO INTRO ------ */
+$opacity-bg: 0.7;
+$opacity-img: 0.5;
 #hero-image{
   position:relative;
-  background-color: rgba($blue-mid, 0.7);
+  background-color: rgba($blue-mid, $opacity-bg);
   &::after {
     content: "";
     background: url('../img/hero-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
+    opacity: $opacity-img;
     top: 0;
     left: 0;
     bottom: 0;
@@ -175,15 +177,43 @@ section{ background-color: $gray-light;}
       font-size: 46px;
       font-weight: 600;
     }
+    p{
+      color: white;
+      font-size: 22px;
+      font-family:  'Merriweather', sans-serif;
+      margin-bottom: 0;
+    }
   }
   &.project{
     position:relative;
-    background-color: rgba($blue-mid, 0.7);
+    background-color: rgba($blue-mid, $opacity-bg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 100px;
     margin-top: -65px;
+  }
+  &.process{
+    position:relative;
+    background-color: rgba($blue-mid, $opacity-bg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    margin-top: -65px;
+    &::after {
+      content: "";
+      background: url('../img/hero-image.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: $opacity-img;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
   }
 }
 
@@ -405,6 +435,7 @@ section{ background-color: $gray-light;}
   }
 }
 
+
 /* FOOTER */
 footer{
   position:relative;
@@ -510,3 +541,5 @@ footer{
 @import 'desktop';
 @import 'tablet';
 @import 'mobile';
+@import 'timeline';
+@import 'bounce-animation';

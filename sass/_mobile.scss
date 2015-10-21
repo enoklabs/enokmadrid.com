@@ -28,4 +28,26 @@
       border:none;
     }
   }
+
+#cd-timeline{
+  @include verticalPadding;
+}
+
+  .cd-dot{
+    left: 5px;
+  }
+
+  .cd-timeline-content {
+    margin-bottom: 20px;
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .cd-timeline-content .cd-step {
+      font-size: 14px;
+    }
+  }
+
 }

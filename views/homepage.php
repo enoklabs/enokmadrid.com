@@ -4,7 +4,7 @@
     <section class="jumbotron">
         <div class="container cta">
             <!-- <span class="name">Enok Madrid</span> -->
-            <h1 class="c-white">UI/Ux Designer<br> Branding <br>
+            <h1 class="c-white">UI/UX<br> Branding <br>
               <small>Front-End Developer</small>
             </h1>
             <a class="button btn btn-lg bgm-transparent-punch no-shadow">Let's Connect</a>
