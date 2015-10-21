@@ -22,9 +22,6 @@ $(document).ready(function(){
     });
 
 
-});
-
-$(document).ready(function(){
     // TIMELINE ANIMATION
     var timelineBlocks = $('.cd-timeline-block');
   	var offset = 0.8;

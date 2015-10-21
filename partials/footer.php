@@ -1,8 +1,3 @@
-
-
-
-
-
 <!-- FOOTER -->
 <footer id="contact">
     <div class="container social-footer">
@@ -32,9 +27,10 @@
                    </ul>
 
                    <ul class="social-icons">
-                     <li><a href="https://twitter.com/3nok" target="_blank"><i class="fa fa-twitter fa-3x"></i> </a> </li>
-                     <li><a href="https://www.linkedin.com/in/enokmadrid" target="_blank"><i class="fa fa-linkedin fa-3x"></i> </a> </li>
-                     <li><a href="https://github.com/enoklabs" target="_blank"><i class="fa fa-github fa-3x"></i> </a> </li>
+                     <li><a href="//dribbble.com/enokmadrid" target="_blank"><i class="fa fa-dribbble fa-3x"></i> </a> </li>
+                     <li><a href="//twitter.com/3nok" target="_blank"><i class="fa fa-twitter fa-3x"></i> </a> </li>
+                     <li><a href="//www.linkedin.com/in/enokmadrid" target="_blank"><i class="fa fa-linkedin fa-3x"></i> </a> </li>
+                     <li><a href="//github.com/enoklabs" target="_blank"><i class="fa fa-github fa-3x"></i> </a> </li>
                      <li id="art-toggle"><i class="fa fa-paint-brush fa-3x"></i></li>
                      <li id="contact-toggle"><i class="fa fa-envelope fa-3x"></i></li>
                    </ul>

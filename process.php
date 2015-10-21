@@ -73,8 +73,16 @@
 
 			<div class="cd-timeline-content">
 				<span class="cd-step">Step One - Discovery</span>
+        <img src="http://placehold.it/90x90" alt="" />
 				<h2>Discovery, Product Data Analysis</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+        <em>Tools I like to use include:</em>
+        <ul>
+          <li>Tool one</li>
+          <li>Tool two</li>
+          <li>Tool three</li>
+          <li>Tool four</li>
+        </ul>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 

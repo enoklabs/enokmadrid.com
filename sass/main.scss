@@ -20,7 +20,7 @@ $tone-text:   scale-color($tone, $lightness: 70%);
 body{
   font-family: 'proxima-nova',sans-serif;
   h1,h2,h3,h4,h5,h6{ font-family: 'futura-pt', sans-serif; }
-  p, b, span, .pmbb-view, li, dd { font-family: 'proxima-nova',sans-serif; color: $text; line-height: 2; font-size: 18px;}
+  p, b, span, .pmbb-view, li, dd, em { font-family: 'proxima-nova',sans-serif; color: $text; line-height: 2; font-size: 16px;}
   font-size:15px;
   background: $blue-mid;
   a{ color: $blue-light;}
@@ -439,7 +439,7 @@ $opacity-img: 0.5;
 
 
 /* FOOTER */
-footer{
+footer#contact{
   position:relative;
   background-color: rgba($tone, 0.6);
   padding-top: 30px;
@@ -457,6 +457,10 @@ footer{
     right: 0;
     position: absolute;
     z-index: -1;
+  }
+
+  .section-title{
+      @include verticalPadding;
   }
 
   .social-footer{
