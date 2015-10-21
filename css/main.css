@@ -10,7 +10,8 @@ body {
   body p, body b, body span, body .pmbb-view, body li, body dd {
     font-family: 'proxima-nova',sans-serif;
     color: #757575;
-    line-height: 2; }
+    line-height: 2;
+    font-size: 18px; }
   body a {
     color: #2096F3; }
 

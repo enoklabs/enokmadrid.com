@@ -20,7 +20,7 @@ $tone-text:   scale-color($tone, $lightness: 70%);
 body{
   font-family: 'proxima-nova',sans-serif;
   h1,h2,h3,h4,h5,h6{ font-family: 'futura-pt', sans-serif; }
-  p, b, span, .pmbb-view, li, dd { font-family: 'proxima-nova',sans-serif; color: $text; line-height: 2;}
+  p, b, span, .pmbb-view, li, dd { font-family: 'proxima-nova',sans-serif; color: $text; line-height: 2; font-size: 18px;}
   font-size:15px;
   background: $blue-mid;
   a{ color: $blue-light;}
