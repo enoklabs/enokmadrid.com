@@ -102,6 +102,14 @@ Main components
     width: 90px;
     margin-top: 18px;
   }
+  .cd-img{
+    position:absolute;
+    float: left;
+    left: auto;
+    right: 122%;
+    width: 70%;
+    img{width:100%;}
+  }
   h2{
     font-size: 30px;
     font-weight: 500;
@@ -129,9 +137,6 @@ Main components
   width: 20px;
   height: 20px;
   border-radius: 50%;
-}
-
-.cd-dot {
   background: $blue-light;
   // box-shadow: 0 0 0 5px white;
 }
@@ -173,7 +178,8 @@ Main components
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: $gray-light;
+  // background: $gray-light;
+  background: white;
   padding: 1em;
   &::after {
     content: "";
@@ -231,21 +237,21 @@ Main components
     &:nth-child(odd) {
       .cd-timeline-content {
         float: right;
-      }
-      .cd-timeline-content::before {
-        top: 24px;
-        left: auto;
-        right: 100%;
-        border-color: transparent;
-        border-right-color: white;
-      }
-      .cd-timeline-content .cd-read-more {
-        float: right;
-      }
-      .cd-timeline-content .cd-step {
-        left: auto;
-        right: 122%;
-        text-align: right;
+        &::before {
+          top: 24px;
+          left: auto;
+          right: 100%;
+          border-color: transparent;
+          border-right-color: white;
+        }
+        .cd-read-more {
+          float: right;
+        }
+        .cd-step {
+          left: auto;
+          right: 122%;
+          text-align: right;
+        }
       }
     }
   }
@@ -255,15 +261,15 @@ Main components
     }
     .cd-timeline-content.bounce-in {
       visibility: visible;
-      -webkit-animation: cd-bounce-2 0.6s;
-      -moz-animation: cd-bounce-2 0.6s;
-      animation: cd-bounce-2 0.6s;
-    }
-    /* inverse bounce effect on even content blocks */
-    .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
       -webkit-animation: cd-bounce-2-inverse 0.6s;
       -moz-animation: cd-bounce-2-inverse 0.6s;
       animation: cd-bounce-2-inverse 0.6s;
+    }
+    /* inverse bounce effect on even content blocks */
+    .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+      -webkit-animation: cd-bounce-2 0.6s;
+      -moz-animation: cd-bounce-2 0.6s;
+      animation: cd-bounce-2 0.6s;
     }
   }
 }

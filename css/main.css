@@ -534,6 +534,14 @@ Main components
     padding-right: 30px;
     width: 90px;
     margin-top: 18px; }
+  .cd-timeline-block .cd-img {
+    position: absolute;
+    float: left;
+    left: auto;
+    right: 122%;
+    width: 70%; }
+    .cd-timeline-block .cd-img img {
+      width: 100%; }
   .cd-timeline-block h2 {
     font-size: 30px;
     font-weight: 500;
@@ -557,9 +565,7 @@ Main components
   top: 0;
   width: 20px;
   height: 20px;
-  border-radius: 50%; }
-
-.cd-dot {
+  border-radius: 50%;
   background: #2096F3; }
 
 @media only screen and (min-width: 1170px) {
@@ -591,7 +597,7 @@ Main components
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #fafafa;
+  background: white;
   padding: 1em; }
   .cd-timeline-content::after {
     content: "";
@@ -635,18 +641,18 @@ Main components
 
   .cd-timeline-block:nth-child(odd) .cd-timeline-content {
     float: right; }
-  .cd-timeline-block:nth-child(odd) .cd-timeline-content::before {
-    top: 24px;
-    left: auto;
-    right: 100%;
-    border-color: transparent;
-    border-right-color: white; }
-  .cd-timeline-block:nth-child(odd) .cd-timeline-content .cd-read-more {
-    float: right; }
-  .cd-timeline-block:nth-child(odd) .cd-timeline-content .cd-step {
-    left: auto;
-    right: 122%;
-    text-align: right; }
+    .cd-timeline-block:nth-child(odd) .cd-timeline-content::before {
+      top: 24px;
+      left: auto;
+      right: 100%;
+      border-color: transparent;
+      border-right-color: white; }
+    .cd-timeline-block:nth-child(odd) .cd-timeline-content .cd-read-more {
+      float: right; }
+    .cd-timeline-block:nth-child(odd) .cd-timeline-content .cd-step {
+      left: auto;
+      right: 122%;
+      text-align: right; }
 
   .cssanimations {
     /* inverse bounce effect on even content blocks */ }
@@ -654,13 +660,13 @@ Main components
       visibility: hidden; }
     .cssanimations .cd-timeline-content.bounce-in {
       visibility: visible;
-      -webkit-animation: cd-bounce-2 0.6s;
-      -moz-animation: cd-bounce-2 0.6s;
-      animation: cd-bounce-2 0.6s; }
-    .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
       -webkit-animation: cd-bounce-2-inverse 0.6s;
       -moz-animation: cd-bounce-2-inverse 0.6s;
-      animation: cd-bounce-2-inverse 0.6s; } }
+      animation: cd-bounce-2-inverse 0.6s; }
+    .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+      -webkit-animation: cd-bounce-2 0.6s;
+      -moz-animation: cd-bounce-2 0.6s;
+      animation: cd-bounce-2 0.6s; } }
 @-webkit-keyframes cd-bounce-1 {
   0% {
     opacity: 0;

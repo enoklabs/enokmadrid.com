@@ -42,15 +42,34 @@
 
 
 
-<!-- <section class="process-content bgm-white">
+<section class="process-content bgm-white">
   <div class="container">
 
-    <div class="row text-center">
-          <h1 class="section-title">Competitive Analysis</h1>
-          <p>Assess the strengths and weaknesses of competitors against your user's needs.</p>
-          <img src="http://placehold.it/1140x300" class="img-responsive" alt="" />
+    <div class="row">
+      <div class="col-md-5">
+        <h1 class="section-title">Step One - Discovery</h1>
+        <p>Discovery, Product Data Analysis</p>
+        <em>Tools I like to use include:</em>
+        <ul>
+          <li>Google Analytics</li>
+          <li>Google Docs / Draw</li>
+          <li>HotJar</li>
+          <li>Peek UserTesting</li>
+        </ul>
+      </div>
+      <div class="col-md-7">
+        <p>I begin most projects by gathering as much information possible. Interview stakeholders to uncover business goals and figure out how I’ll measure success. This allows me to grasp a solid understanding of the problems that need to be solved.
           <br><br>
-          <img src="http://placehold.it/1140x300" class="img-responsive" alt="" />
+          If it’s an existing product, I’ll sometimes run analytics and run some user tests.
+          <br><br>
+          Otherwise, if it’s a new product, I create user stories, scenarios, and user flows to find the best experience for the end user.
+        </p>
+      </div>
+      <div class="">
+        <img src="http://placehold.it/1140x300" class="img-responsive" alt="" />
+        <br><br>
+        <img src="http://placehold.it/1140x300" class="img-responsive" alt="" />
+      </div>
     </div>
 
     <div class="row text-center m-t-25">
@@ -60,88 +79,117 @@
     </div>
 
   </div>
-</section> -->
+</section>
 
 
 
 <!-- TIME LINE -->
-<section id="cd-timeline" class="cd-container bgm-white">
+<section id="cd-timeline" class="cd-container">
     <div class="container p-r-0 p-l-0">
 		<div class="cd-timeline-block">
-			<div class="cd-dot cd-picture">
-			</div> <!-- cd-dot -->
+			<div class="cd-dot"></div> <!-- cd-dot -->
 
 			<div class="cd-timeline-content">
 				<span class="cd-step">Step One - Discovery</span>
-        <img src="http://placehold.it/90x90" alt="" />
+        <div class="cd-img">
+          <img src="img/big-icon.png" alt="" />
+        </div>
+        <!-- <img src="http://placehold.it/90x90" alt="" /> -->
 				<h2>Discovery, Product Data Analysis</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				<p>I begin most projects by gathering as much information possible. Interview stakeholders to uncover business goals and figure out how I’ll measure success. This allows me to grasp a solid understanding of the problems that need to be solved.
+          <br>
+          If it’s an existing product, I’ll sometimes run analytics and run some user tests.
+          <br>
+          Otherwise, if it’s a new product, I create user stories, scenarios, and user flows to find the best experience for the end user.
+        </p>
         <em>Tools I like to use include:</em>
         <ul>
-          <li>Tool one</li>
-          <li>Tool two</li>
-          <li>Tool three</li>
-          <li>Tool four</li>
+          <li>Google Analytics</li>
+          <li>Google Docs / Draw</li>
+          <li>HotJar</li>
+          <li>Peek UserTesting</li>
         </ul>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
-			<div class="cd-dot cd-movie">
-			</div> <!-- cd-dot -->
+      <div class="cd-dot"></div> <!-- cd-dot -->
 
 			<div class="cd-timeline-content">
 				<span class="cd-step">Step Two - Exploration</span>
-        <img src="http://placehold.it/90x90" alt="" />
+        <!-- <img src="http://placehold.it/90x90" alt="" /> -->
 				<h2>Exploration, Information Architecture</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+				<p>
+          Exploration is where I like to get creative. Sketch out ideas, fine tune user flows, build the Information Architecture, and start the wireframing process. Making sure with the client that a good foundation has been created.
+        </p>
         <em>Tools I like to use include:</em>
         <ul>
-          <li>Tool one</li>
-          <li>Tool two</li>
-          <li>Tool three</li>
-          <li>Tool four</li>
+          <li>Pencil and Paper</li>
+          <li>Axure RP</li>
+          <li>Illustrator</li>
+          <li>Sketch App</li>
         </ul>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
-			<div class="cd-dot cd-picture">
-			</div> <!-- cd-dot -->
+      <div class="cd-dot"></div> <!-- cd-dot -->
 
 			<div class="cd-timeline-content">
-        <span class="cd-step">Step Three - Design</span>
-        <img src="http://placehold.it/90x90" alt="" />
+        <span class="cd-step">Step Three - Visual Design</span>
+        <!-- <img src="http://placehold.it/90x90" alt="" /> -->
 				<h2>Design, Visual Layout</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+				<p>
+          After a solid foundation, I proceed into my favorite part of this process: designing. This is where I start putting together actual deliverables.
+          <br>
+          Normally, I will create mood boards, visual assets like icons, illustrations and graphics where necessary. And build out high-fidelity mock-ups for client approval in Sketch presented in Invision App.
+        </p>
         <em>Tools I like to use include:</em>
         <ul>
-          <li>Tool one</li>
-          <li>Tool two</li>
-          <li>Tool three</li>
-          <li>Tool four</li>
+          <li>Illustrator / Photoshop</li>
+          <li>Sketch App</li>
+          <li>Invision App</li>
         </ul>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
-			<div class="cd-dot cd-location">
-			</div> <!-- cd-dot -->
+      <div class="cd-dot"></div> <!-- cd-dot -->
 
 			<div class="cd-timeline-content">
-        <span class="cd-step">Step Four - Quality Assurence</span>
-        <img src="http://placehold.it/90x90" alt="" />
-				<h2>Quality Assurence, Testing and Micro Details</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+        <span class="cd-step">Step Four - Build Prototype</span>
+        <!-- <img src="http://placehold.it/90x90" alt="" /> -->
+				<h2>An Interactive Prototype</h2>
+				<p>
+          Before proceeding to build out the front-end architecture for the prototype, I consult with the client and development team to decide on frameworks like Foundation, Bootstrap and Angular js. I will then start creating html5/css3/js views or build a functioning style guide of UI elements for the developers to use.
+        </p>
         <em>Tools I like to use include:</em>
         <ul>
-          <li>Tool one</li>
-          <li>Tool two</li>
-          <li>Tool three</li>
-          <li>Tool four</li>
+          <li>Foundation / Bootstrap</li>
+          <li>Codekit / Sass</li>
+          <li>jQuery / Angular js</li>
+          <li>FontAwesome</li>
         </ul>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-dot"></div> <!-- cd-dot -->
+
+      <div class="cd-timeline-content">
+        <span class="cd-step">Step Five - Quality Assurance</span>
+        <!-- <img src="http://placehold.it/90x90" alt="" /> -->
+        <h2>Testing and Micro Details</h2>
+        <p>
+          I believe this step is crucial in creating a quality product. Every little detail is accounted for in this step. I will validate / test, and clean up the tone of voice and IA. This is also a good time to introduce intuitive animations and guided help to assist the end user.        </p>
+        <em>Tools I like to use include:</em>
+        <ul>
+          <li>Speed Test</li>
+          <li>GTMetrix</li>
+          <li>BrowserStack</li>
+        </ul>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
 
 
   </div>
