@@ -78,7 +78,7 @@ section {
   background-size: cover; }
   #hero-image::after {
     content: "";
-    background: url("../img/hero-image.jpg");
+    background: url("../img/hero-image4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.5;
