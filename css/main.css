@@ -347,13 +347,44 @@ section {
     text-transform: uppercase;
     padding-top: 10px; }
 
+.process-tabs {
+  background: #fafafa; }
+
+.is-hidden {
+  visibility: hidden; }
+
 /* ------ PROCESS CONTENT ----------------------------------------- */
 .process-content {
   padding-top: 80px;
   padding-bottom: 80px; }
-  .process-content p {
-    padding-top: 20px;
-    padding-bottom: 40px; }
+  .process-content h4, .process-content h3, .process-content h2, .process-content h1, .process-content .process-title {
+    margin-top: 0;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .process-content .process-info p {
+    font-size: 20px; }
+  .process-content .process-info b {
+    display: inherit;
+    margin-top: 15px;
+    color: black; }
+  .process-content .process-info ul {
+    list-style: disc;
+    padding-left: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 50px; }
+  .process-content .process-info .btn {
+    background: #2096F3;
+    text-transform: none; }
+    .process-content .process-info .btn i {
+      color: inherit;
+      padding-right: 10px; }
+  .process-content .process-about .process-title {
+    margin-top: 0; }
+  .process-content .process-about p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.8; }
 
 /* FOOTER */
 footer#contact {

@@ -40,15 +40,25 @@
 </div><!-- End hero-image -->
 
 
+<div class="process-tabs">
+  <ul class="tab-nav tn-justified" tabindex="1" style="overflow: hidden; outline: none;">
+      <li class="waves-effect active"><a href="#">1. Discovery</a></li>
+      <li class="waves-effect"><a href="#">2. Exploration</a></li>
+      <li class="waves-effect"><a href="#">3. Design</a></li>
+      <li class="waves-effect"><a href="#">4. Prototype</a></li>
+      <li class="waves-effect"><a href="#">5. QA</a></li>
+  </ul>
+</div>
+
 
 
 <section class="process-content bgm-white">
   <div class="container">
 
-    <div class="row">
-      <div class="col-md-5">
-        <h1 class="section-title">Step One - Discovery</h1>
-        <p>Discovery, Product Data Analysis</p>
+    <div class="row process-step">
+      <div class="col-md-4 process-info">
+        <h1>Step 1 Discovery</h1>
+        <!-- <p></p> -->
         <em>Tools I like to use include:</em>
         <ul>
           <li>Google Analytics</li>
@@ -57,26 +67,32 @@
           <li>Peek UserTesting</li>
         </ul>
       </div>
-      <div class="col-md-7">
-        <p>I begin most projects by gathering as much information possible. Interview stakeholders to uncover business goals and figure out how I’ll measure success. This allows me to grasp a solid understanding of the problems that need to be solved.
-          <br><br>
+      <div class="col-md-8 process-about">
+        <h3 class="process-title">Product Data Analysis</h3>
+        <p>
+          I begin most projects by gathering as much information possible. Interview stakeholders to uncover business goals and figure out how I’ll measure success. This allows me to grasp a solid understanding of the problems that need to be solved.
+        </p>
+        <p>
           If it’s an existing product, I’ll sometimes run analytics and run some user tests.
-          <br><br>
+        </p>
+        <h3 class="process-title">Product Data Analysis</h3>
+        <p>
           Otherwise, if it’s a new product, I create user stories, scenarios, and user flows to find the best experience for the end user.
         </p>
-      </div>
-      <div class="">
-        <img src="http://placehold.it/1140x300" class="img-responsive" alt="" />
-        <br><br>
-        <img src="http://placehold.it/1140x300" class="img-responsive" alt="" />
+
+        <div class="row m-t-25">
+          <div class="col-xs-6">
+            <img class="img-responsive" src="http://john-ellison.com/images/thengine-brainstorm-3.jpg" alt="" />
+          </div>
+          <div class="col-xs-6">
+            <img class="img-responsive" src="http://john-ellison.com/images/thengine-brainstorm-1.jpg" alt="" />
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="row text-center m-t-25">
-          <h1 class="section-title">Mental Model</h1>
-          <p>Capture user behavior, pain points, motivations, and needs from contextual inquires.<br>Group into logical pillars. Map out product features for each pillar to identify gaps, opportunities, and feature bloat.</p>
-          <img src="http://placehold.it/1140x300" class="img-responsive" alt="" />
-    </div>
+
 
   </div>
 </section>

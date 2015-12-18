@@ -23,29 +23,58 @@ $(document).ready(function(){
 
 
     // TIMELINE ANIMATION
-    var timelineBlocks = $('.cd-timeline-block');
-  	var offset = 0.8;
+    // var timelineBlocks = $('.cd-timeline-block');
+  	// var offset = 0.8;
+    //
+  	// //hide timeline blocks which are outside the viewport
+  	// hideBlocks(timelineBlocks, offset);
+    //
+  	// //on scolling, show/animate timeline blocks when enter the viewport
+  	// $(window).on('scroll', function(){
+  	// 	(!window.requestAnimationFrame)
+  	// 		? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
+  	// 		: window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
+  	// });
+    //
+  	// function hideBlocks(blocks, offset) {
+  	// 	blocks.each(function(){
+  	// 		( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.cd-dot, .cd-timeline-content').addClass('is-hidden');
+  	// 	});
+  	// }
+    //
+  	// function showBlocks(blocks, offset) {
+  	// 	blocks.each(function(){
+  	// 		( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-dot').hasClass('is-hidden') ) && $(this).find('.cd-dot, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+  	// 	});
+  	// }
 
-  	//hide timeline blocks which are outside the viewport
-  	hideBlocks(timelineBlocks, offset);
 
-  	//on scolling, show/animate timeline blocks when enter the viewport
-  	$(window).on('scroll', function(){
-  		(!window.requestAnimationFrame)
-  			? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
-  			: window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
-  	});
 
-  	function hideBlocks(blocks, offset) {
-  		blocks.each(function(){
-  			( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.cd-dot, .cd-timeline-content').addClass('is-hidden');
-  		});
-  	}
 
-  	function showBlocks(blocks, offset) {
-  		blocks.each(function(){
-  			( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-dot').hasClass('is-hidden') ) && $(this).find('.cd-dot, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
-  		});
-  	}
+    // PROCESS STEP TIMELINE ANIMATION COPY
+    var timelineBlocks = $('.process-step');
+    var offset = 0.8;
+
+    //hide timeline blocks which are outside the viewport
+    hideBlocks(timelineBlocks, offset);
+
+    //on scolling, show/animate timeline blocks when enter the viewport
+    $(window).on('scroll', function(){
+      (!window.requestAnimationFrame)
+        ? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
+        : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
+    });
+
+    function hideBlocks(blocks, offset) {
+      blocks.each(function(){
+        ( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.process-info, .process-about').addClass('is-hidden');
+      });
+    }
+
+    function showBlocks(blocks, offset) {
+      blocks.each(function(){
+        ( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.process-info').hasClass('is-hidden') ) && $(this).find('.process-info, .process-about').removeClass('is-hidden').addClass('bounce-in');
+      });
+    }
 
 });
