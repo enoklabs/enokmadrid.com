@@ -4,3 +4,6 @@ config.codekit
 *.scssc
 
 js/read-me.txt
+.idea
+.idea/*
+.idea/vcs.xml

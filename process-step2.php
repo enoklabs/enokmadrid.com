@@ -42,8 +42,8 @@
 
 <div class="process-tabs">
   <ul class="tab-nav tn-justified" tabindex="1" style="overflow: hidden; outline: none;">
-      <li class="waves-effect active"><a href="process.php">1. Discovery</a></li>
-      <li class="waves-effect"><a href="process-step2.php">2. Exploration</a></li>
+      <li class="waves-effect"><a href="process.php">1. Discovery</a></li>
+      <li class="waves-effect active"><a href="process-step2.php">2. Exploration</a></li>
       <li class="waves-effect"><a href="process-step3.php">3. Design</a></li>
       <li class="waves-effect"><a href="process-step4.php">4. Prototype</a></li>
       <li class="waves-effect"><a href="process-step5.php">5. QA</a></li>
@@ -57,28 +57,23 @@
 
     <div class="row process-step">
       <div class="col-md-4 process-info">
-        <h1>Step 1 Discovery</h1>
+        <h1>Step 2 Exploration</h1>
         <!-- <p></p> -->
         <em>Tools I like to use include:</em>
         <ul>
-          <li>Google Analytics</li>
-          <li>Google Docs / Draw</li>
-          <li>HotJar</li>
-          <li>Peek UserTesting</li>
+          <li>Pencil and Paper</li>
+          <li>Axure RP</li>
+          <li>Illustrator</li>
+          <li>Sketch App</li>
         </ul>
       </div>
       <div class="col-md-8 process-about">
-        <h3 class="process-title">Product Data Analysis</h3>
+        <h3 class="process-title">Information Architecture</h3>
         <p>
-          I begin most projects by gathering as much information possible. Interview stakeholders to uncover business goals and figure out how I’ll measure success. This allows me to grasp a solid understanding of the problems that need to be solved.
+            Exploration is where I like to get creative. Sketch out ideas, fine tune user flows, build the Information Architecture, and start the wireframing process. Making sure with the client that a good foundation has been created.
         </p>
-        <p>
-          If it’s an existing product, I’ll sometimes run analytics and run some user tests.
-        </p>
-        <h3 class="process-title">Product Data Analysis</h3>
-        <p>
-          Otherwise, if it’s a new product, I create user stories, scenarios, and user flows to find the best experience for the end user.
-        </p>
+
+      <h3 class="process-title">Wireframing</h3>
 
         <div class="row m-t-25">
           <div class="col-xs-6">
@@ -152,14 +147,15 @@
       <div class="cd-dot"></div> <!-- cd-dot -->
 
 			<div class="cd-timeline-content">
-        <span class="cd-step">Step Three - Visual Design</span>
+        <span class="cd-step">Step Three - User Interface Design</span>
         <!-- <img src="http://placehold.it/90x90" alt="" /> -->
-				<h2>Design, Visual Layout</h2>
+				<h2>The UI Design Process</h2>
 				<p>
           After a solid foundation, I proceed into my favorite part of this process: designing. This is where I start putting together actual deliverables.
           <br>
           Normally, I will create mood boards, visual assets like icons, illustrations and graphics where necessary. And build out high-fidelity mock-ups for client approval in Sketch presented in Invision App.
         </p>
+                <h2>Interactive Prototype</h2>
         <em>Tools I like to use include:</em>
         <ul>
           <li>Illustrator / Photoshop</li>
@@ -175,7 +171,7 @@
 			<div class="cd-timeline-content">
         <span class="cd-step">Step Four - Build Prototype</span>
         <!-- <img src="http://placehold.it/90x90" alt="" /> -->
-				<h2>An Interactive Prototype</h2>
+				<h2>Prototype Development</h2>
 				<p>
           Before proceeding to build out the front-end architecture for the prototype, I consult with the client and development team to decide on frameworks like Foundation, Bootstrap and Angular js. I will then start creating html5/css3/js views or build a functioning style guide of UI elements for the developers to use.
         </p>
